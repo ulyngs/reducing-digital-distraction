@@ -1,7 +1,7 @@
 ---
-title: "Strategies"
+title: "Reducing Digital Distraction"
 output:
-  html_document:
+  bookdown::html_document2:
     toc: true
     toc_float: true
 ---
@@ -14,9 +14,7 @@ library(knitr)
 
 ```
 
-# Reducing Digital Distraction
-
-Welcome to the accompanying website to the **Re**ducing *D*igital *D*istraction (ReDD) workshop.
+Welcome to the accompanying website to the **Re**ducing **D**igital **D**istraction (ReDD) workshop.
 
 Here, you will find a bit of further detail about the tools and strategies listed on the cards handed out in the workshop.
 
