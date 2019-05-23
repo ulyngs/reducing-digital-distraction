@@ -32,7 +32,7 @@ Discover these by searching through the web stores for extensions for the web br
 - [Firefox Add-Ons](https://addons.mozilla.org/en-GB/firefox/)
 
 The most popular website blocker for Chrome is [Block Site - Website Blocker for Chrome™](https://chrome.google.com/webstore/detail/block-site-website-blocke/eiimnmioipafcokbfikbljfdeojpcgbh/related?hl=en):
-```{r}
+```{r, out.width="50%"}
 knitr::include_graphics("figures/chrome_block_setup.png")
 knitr::include_graphics("figures/chrome_block_result.png")
 ```
