@@ -152,7 +152,32 @@ On iOS, Apple's recent app [Screen Time](https://support.apple.com/en-gb/HT20898
 knitr::include_graphics("figures/screentime.png")
 ```
 
-## Pomodoro timers, countdowns
+## Work in bursts with a timer - Pomodoro technique
+To keep you on track with what you're momentarily doing, many people track themselves with a countdown timer.
+This is often done in adherence to the 'Pomodoro' technique, where you break your work down into intervals, typically 25 minutes in length, separated by short breaks.
+
+### Laptop
+Numerous tools exist for implementing this, for example [Be Focused](https://xwavesoft.com/be-focused-pro-for-iphone-ipad-mac-os-x.html):
+```{r}
+knitr::include_graphics("figures/pomodoro.png")
+```
+
+You can also combine this with blocking distracting websites during work intervals, for example with [FocusMe](https://chrome.google.com/webstore/detail/focusme-a-pomodoro-timer/koebbleaefghpjjmghelhjboilcmfpad?hl=gb):
+```{r}
+knitr::include_graphics("figures/focusme.png")
+```
+
+### Android
+Apps that implement this functionality include [Its Study Time](https://play.google.com/store/apps/details?id=com.deGans.itsStudyTime&hl=en&gl=us):
+```{r}
+knitr::include_graphics("figures/its_study_time2.png")
+```
+
+### iOS
+On Apple's devices, this is implemented by tools including [Mattie](https://itunes.apple.com/gb/app/sidekick-mattie/id1166327958?mt=8&ign-mpt=uo%3D4):
+```{r}
+knitr::include_graphics("figures/mattie.jpg")
+```
 
 # Goal-advancement
 ## Remind yourself of what you needed to do
