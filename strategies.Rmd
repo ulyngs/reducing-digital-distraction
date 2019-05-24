@@ -125,7 +125,33 @@ knitr::include_graphics("figures/downtime2.png")
 
 
 # Self-tracking
-## Measure yourself and see how your spend your time - RescueTime, built-in tools
+## See how your spend your time
+Various tools are available to see how your spend time on your devices, and compare it to your goals.
+
+On **laptop**, one of the most popular tools is [RescueTime](https://www.rescuetime.com): 
+
+```{r}
+knitr::include_graphics("figures/rescue_time.png")
+```
+
+### Android
+On **Android**, apps such as [Usage Time](https://play.google.com/store/apps/details?id=com.agooday.screentime&hl=en&gl=us) provide the same functionality:
+
+```{r}
+knitr::include_graphics("figures/app_usage.png")
+```
+
+Google has also begun to provide the same functionality via their [Digital Wellbeing](https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&hl=en_GB) app which comes pre-installed on many newer devices:
+```{r}
+knitr::include_graphics("figures/digi_wellbeing.jpeg")
+```
+
+### iOS
+On iOS, Apple's recent app [Screen Time](https://support.apple.com/en-gb/HT208982) provides this ability:
+```{r}
+knitr::include_graphics("figures/screentime.png")
+```
+
 ## Pomodoro timers, countdowns
 
 # Goal-advancement
