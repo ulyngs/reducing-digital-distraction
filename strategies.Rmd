@@ -153,7 +153,7 @@ On iOS, Apple's recent app [Screen Time](https://support.apple.com/en-gb/HT20898
 knitr::include_graphics("figures/screentime.png")
 ```
 
-## Work in bursts with a timer - Pomodoro technique
+## Work in bursts with a timer
 To keep you on track with what you're momentarily doing, many people track themselves with a countdown timer.
 This is often done in adherence to the 'Pomodoro' technique, where you break your work down into intervals, typically 25 minutes in length, separated by short breaks.
 
@@ -247,7 +247,7 @@ Search through the browser extension stores for similar extensions for your brow
 
 
 ## Periodic reminders
-Remind yourself to mindful of what you're doing.
+Be mindful of what you're supposed to be doing.
 
 For example, use the Chrome extension [Gen4](https://chrome.google.com/webstore/detail/gen4/pjkdlacnjfgkdbpojjfalmehngmlegnd/related?hl=gb) to get period reminders of what you're supposed to be doing while you're browsing the web:
 
