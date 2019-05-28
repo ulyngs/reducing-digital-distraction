@@ -21,7 +21,7 @@ Here, you will find a bit of further detail about the tools and strategies liste
 
 You can scroll through a large number of tools here: [tinyurl.com/digital-selfcontrol](https://docs.google.com/spreadsheets/d/1BVBCBOZQY_K7qYmDiSIail07F6D1iDG1OkoFyazb5Y4/edit#gid=777024457).
 
-# Block/Remove distractions
+# Block or remove distractions
 ## Block access
 If particular websites or apps distract you, try blocking your own access to them for some time or after a certain amount of time has passed.
 
@@ -124,7 +124,7 @@ knitr::include_graphics("figures/downtime2.png")
 ```
 
 
-# Self-tracking
+# Track yourself
 ## See how your spend your time
 Various tools are available to see how your spend time on your devices, and compare it to your goals.
 
@@ -256,7 +256,7 @@ knitr::include_graphics("figures/gen4-2.jpg")
 ```
 
 
-# Reward/punish
+# Reward or punish yourself
 ## Forest, Flora
 ## World’s most dangerous writing app
 
