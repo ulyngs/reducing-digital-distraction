@@ -158,11 +158,13 @@ This is often done in adherence to the 'Pomodoro' technique, where you break you
 
 ### Laptop
 Numerous tools exist for implementing this, for example [Be Focused](https://xwavesoft.com/be-focused-pro-for-iphone-ipad-mac-os-x.html):
+
 ```{r}
 knitr::include_graphics("figures/pomodoro.png")
 ```
 
 You can also combine this with blocking distracting websites during work intervals, for example with [FocusMe](https://chrome.google.com/webstore/detail/focusme-a-pomodoro-timer/koebbleaefghpjjmghelhjboilcmfpad?hl=gb):
+
 ```{r}
 knitr::include_graphics("figures/focusme.png")
 ```
@@ -175,16 +177,84 @@ knitr::include_graphics("figures/its_study_time2.png")
 
 ### iOS
 On Apple's devices, this is implemented by tools including [Mattie](https://itunes.apple.com/gb/app/sidekick-mattie/id1166327958?mt=8&ign-mpt=uo%3D4):
+
 ```{r}
 knitr::include_graphics("figures/mattie.jpg")
 ```
 
-# Goal-advancement
-## Remind yourself of what you needed to do
-## New tab with e.g. what’s your goal
-## Periodic reminders
+# Advance your goals
+## Make new tabs remind you of your goals
+On **laptop**, make new tabs remind you of what you need to do.
+
+For example, you can use the Chrome extension [Focus](https://chrome.google.com/webstore/detail/focus/paipcheolflniajdfeglfpddafcklepg?hl=gb) to turn new tabs into a todo-list:
+
+```{r}
+knitr::include_graphics("figures/focus_tab.png")
+```
+
+This extension also lets you block distracting websites while you focus on a specific task.
+
+Search through the browser extension stores for a similar extension which might be useful to you:
+- [Safari Extensions](https://safari-extensions.apple.com)
+- [Chrome Extensions](https://chrome.google.com/webstore/category/extensions?hl=en)
+- [Firefox Add-Ons](https://addons.mozilla.org/en-GB/firefox/)
+
+
 ## Motivational quotes
-## Redirect yourself
+On **laptop**, use new tabs to remind of what's important in life.
+
+For example, use the Chrome extension [Daily Motivation](https://chrome.google.com/webstore/detail/daily-motivation-motivati/nonnkklkpbokmppgochfdamhihaijdin?hl=gb) to replace the content of new tabs with motivational quotes:
+
+```{r}
+knitr::include_graphics("figures/daily_motivation.png")
+```
+
+Search through the browser extension stores for similar extensions for your browser:
+- [Safari Extensions](https://safari-extensions.apple.com)
+- [Chrome Extensions](https://chrome.google.com/webstore/category/extensions?hl=en)
+- [Firefox Add-Ons](https://addons.mozilla.org/en-GB/firefox/)
+
+
+## Replace Facebook's newsfeed with a todo-list
+
+On **laptop**, replace Facebook's newsfeed with reminders of what you need to do.
+
+For example, use the Chrome extension [Todobook](https://chrome.google.com/webstore/detail/todobook/ihbejplhkeifejcpijadinaicidddbde?hl=gb) to replace Facebook's newsfeed with a todo list.
+
+```{r}
+knitr::include_graphics("figures/todobook.png")
+```
+
+Search through the browser extension stores for similar extensions for your browser:
+- [Safari Extensions](https://safari-extensions.apple.com)
+- [Chrome Extensions](https://chrome.google.com/webstore/category/extensions?hl=en)
+- [Firefox Add-Ons](https://addons.mozilla.org/en-GB/firefox/)
+
+## Automatically redirect yourself away from distraction 
+On **laptop**, automatically redirect yourself away from distracting websites when you need to focus.
+
+For example, use the Chrome extension [Timewarp](https://chrome.google.com/webstore/detail/timewarp/mmmhadpnjmokjbmgamifipkjddhlfkhi?hl=gb):
+
+```{r}
+knitr::include_graphics("figures/timewarp.png")
+```
+
+Search through the browser extension stores for similar extensions for your browser:
+- [Safari Extensions](https://safari-extensions.apple.com)
+- [Chrome Extensions](https://chrome.google.com/webstore/category/extensions?hl=en)
+- [Firefox Add-Ons](https://addons.mozilla.org/en-GB/firefox/)
+
+
+## Periodic reminders
+Remind yourself to mindful of what you're doing.
+
+For example, use the Chrome extension [Gen4](https://chrome.google.com/webstore/detail/gen4/pjkdlacnjfgkdbpojjfalmehngmlegnd/related?hl=gb) to get period reminders of what you're supposed to be doing while you're browsing the web:
+
+```{r, out.width="50%"}
+knitr::include_graphics("figures/gen4.jpg")
+knitr::include_graphics("figures/gen4-2.jpg")
+```
+
 
 # Reward/punish
 ## Forest, Flora
