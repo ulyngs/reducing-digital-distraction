@@ -1,0 +1,13 @@
+name: "Reducing Digital Distraction"
+navbar:
+  title: "Reducing Digital Distraction"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Tools"
+      href: tools.html
+output:
+  html_document:
+    theme: cosmo
+    css: style.css
+output_dir: "docs"

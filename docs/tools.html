@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>tools.utf8.md</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Reducing Digital Distraction</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="tools.html">Tools</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<div id="block-or-remove-distractions" class="section level1 tabset">
+<h1>Block or remove distractions</h1>
+<div id="block-access" class="section level2">
+<h2>Block access</h2>
+<p>If particular websites or apps distract you, try blocking your access to them for some time or after a certain amount of time has passed.</p>
+<div id="laptop" class="section level3">
+<h3>Laptop</h3>
+<p>Many browser extensions allow you to block websites. Discover these by searching through the web stores for extensions for the web browser you use: - <a href="https://safari-extensions.apple.com">Safari Extensions</a> - <a href="https://chrome.google.com/webstore/category/extensions?hl=en">Chrome Extensions</a> - <a href="https://addons.mozilla.org/en-GB/firefox/">Firefox Add-Ons</a></p>
+<p>The most popular website blocker for Chrome is <a href="https://chrome.google.com/webstore/detail/block-site-website-blocke/eiimnmioipafcokbfikbljfdeojpcgbh/related?hl=en">Block Site - Website Blocker for Chrome™</a>: <img src="figures/chrome_block_setup.png" width="45%" /><img src="figures/chrome_block_result.png" width="45%" /></p>
+</div>
+<div id="smartphone" class="section level3">
+<h3>Smartphone</h3>
+<p>On Android, the most popular app blocker is <a href="https://play.google.com/store/apps/details?id=com.stayfocused&amp;hl=en_GB">Stay Focused</a>:</p>
+<p><img src="figures/stay_focused_block.png" width="45%" /><img src="figures/stay_focused_limit.png" width="45%" /></p>
+<p>On iOS, you can use Apple’s built-in app <a href="https://support.apple.com/en-gb/HT208982">Screen Time</a> to block your own access to particular apps.</p>
+<p>To do so, go to <strong>Settings -&gt; Screen Time -&gt; App Limits</strong></p>
+</div>
+</div>
+<div id="remove-features" class="section level2">
+<h2>Remove features</h2>
+<p>On laptop, use browser extensions to remove features of websites you find distracting.</p>
+<p>For example, use extensions to remove Facebook’s newsfeed (e.g. with Chrome’s <a href="https://chrome.google.com/webstore/detail/news-feed-eradicator-for/fjcldmjmjhkklehbacihaiopjklihlgg">News Feed Eradicator</a>), or recommended videos from YouTube (e.g. with Safari’s <a href="https://safari-extensions.apple.com/details/?id=com.robertjeffs.distractionblockerforyoutube-W9AT75TA27">Distraction Blocker for YouTube</a>):</p>
+<p><img src="figures/fb_newsfeed.png" width="45%" /><img src="figures/youtube_minimal.png" width="45%" /></p>
+<p>The Chrome extension <a href="https://chrome.google.com/webstore/detail/click-to-remove-element/jcgpghgjhhahcefnfpbncdmhhddedhnk?hl=gb">Click to Remove Element</a> allows you to remove elements from any website with a single click:</p>
+<p><img src="figures/remove_element.jpg" width="320" /></p>
+<p>If you use Gmail in a browser, <a href="https://chrome.google.com/webstore/detail/inbox-when-ready-for-gmai/cdedhgmbfjhobfnphaoihdfmnjidcpim?hl=gb">Inbox When Ready</a> hides your inbox by default, until you deliberately click that you wish to see it:</p>
+<p><img src="figures/inbox_ready.jpg" width="320" /></p>
+<p>Search through the browser extension stores for a similar extension which might be useful to you: - <a href="https://safari-extensions.apple.com">Safari Extensions</a> - <a href="https://chrome.google.com/webstore/category/extensions?hl=en">Chrome Extensions</a> - <a href="https://addons.mozilla.org/en-GB/firefox/">Firefox Add-Ons</a></p>
+</div>
+<div id="minimal-writing-tools" class="section level2">
+<h2>Minimal writing tools</h2>
+<p>When you try to focus on writing, consider getting all distractions out of the way.</p>
+<p>For smartphones, there are dedicated minimalistic writing tools such as <a href="https://play.google.com/store/apps/details?id=com.jotterpad.x&amp;hl=en&amp;gl=us">JotterPad</a>:</p>
+<p><img src="figures/jotterpad.png" width="1200" /></p>
+<p>If you use Google Docs on laptop, there are browser extensions to make the interface super minimalistic, for example <a href="https://safari-extensions.apple.com/details/?id=com.kallepersson.distractionfree-BBWY83BGU8">DistractionFree for Safari</a>:</p>
+<p><img src="figures/google_docs.png" width="1680" /></p>
+<p>Even Microsoft Word now includes a minimalistic ‘Focus’ mode:</p>
+<p><img src="figures/word_focus1.png" width="45%" /><img src="figures/word_focus2.png" width="45%" /></p>
+</div>
+<div id="go-monotasking-dumbphone" class="section level2">
+<h2>Go monotasking / dumbphone</h2>
+<p>A few tools can force your devices into ‘monotasking’ mode.</p>
+<div id="laptop-1" class="section level3">
+<h3>Laptop</h3>
+<p><a href="https://getcoldturkey.com/writer/">Cold Turkey Writer</a> allows you to turn your laptop into a typewriter until you’ve typed a specific number of words, or for a specific length of time:</p>
+<p><img src="figures/cold_turkey.png" width="1680" /></p>
+</div>
+<div id="smartphone-1" class="section level3">
+<h3>Smartphone</h3>
+<p>On Android, simulate a similar situation with the app <a href="https://play.google.com/store/apps/details?id=bg.bozho.dumbphone&amp;hl=en&amp;gl=us">Dumbphone</a>:</p>
+<p><img src="figures/dumbphone.png" width="270" /></p>
+<p>On iOS, get the same effect using <a href="https://support.apple.com/en-gb/HT208982">Screen Time</a>‘s ’Downtime’ feature. When ‘Downtime’ is scheduled, only phone calls and apps that you choose to allow are available:</p>
+<p><img src="figures/downtime1.png" width="45%" /><img src="figures/downtime2.png" width="45%" /></p>
+</div>
+</div>
+</div>
+<div id="track-yourself" class="section level1 tabset">
+<h1>Track yourself</h1>
+<div id="see-how-your-spend-your-time" class="section level2">
+<h2>See how your spend your time</h2>
+<p>Various tools are available to see how your spend time on your devices, and compare it to your goals.</p>
+<p>On <strong>laptop</strong>, one of the most popular tools is <a href="https://www.rescuetime.com">RescueTime</a>:</p>
+<p><img src="figures/rescue_time.png" width="1039" /></p>
+<div id="android" class="section level3">
+<h3>Android</h3>
+<p>On <strong>Android</strong>, apps such as <a href="https://play.google.com/store/apps/details?id=com.agooday.screentime&amp;hl=en&amp;gl=us">Usage Time</a> provide the same functionality:</p>
+<p><img src="figures/app_usage.png" width="525" /></p>
+<p>Google provides the same functionality with <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&amp;hl=en_GB">Digital Wellbeing</a>, which is pre-installed on many newer Android devices (Settings &gt; Digital Wellbeing):</p>
+<p><img src="figures/digi_wellbeing.jpeg" width="910" /></p>
+</div>
+<div id="ios" class="section level3">
+<h3>iOS</h3>
+<p>On iOS, <a href="https://support.apple.com/en-gb/HT208982">Screen Time</a> provides this ability (<strong>Settings -&gt; Screen Time</strong>):</p>
+<p><img src="figures/screentime.png" width="347" /></p>
+</div>
+</div>
+<div id="work-in-bursts-with-a-timer" class="section level2">
+<h2>Work in bursts with a timer</h2>
+<p>To keep you on track, many people track themselves with a countdown timer. This is often done with the ‘Pomodoro’ technique, where you break your work down in intervals, typically 25 minutes, separated by short breaks.</p>
+<div id="laptop-2" class="section level3">
+<h3>Laptop</h3>
+<p>Numerous tools support this, for example <a href="https://xwavesoft.com/be-focused-pro-for-iphone-ipad-mac-os-x.html">Be Focused</a>:</p>
+<p><img src="figures/pomodoro.png" width="253" /></p>
+<p>You can combine this with blocking distracting websites during work sessions, for example using the Chrome extension <a href="https://chrome.google.com/webstore/detail/focusme-a-pomodoro-timer/koebbleaefghpjjmghelhjboilcmfpad?hl=gb">FocusMe</a>:</p>
+<p><img src="figures/focusme.png" width="320" /></p>
+</div>
+<div id="android-1" class="section level3">
+<h3>Android</h3>
+<p>Apps supporting this include <a href="https://play.google.com/store/apps/details?id=com.deGans.itsStudyTime&amp;hl=en&amp;gl=us">Its Study Time</a>:</p>
+<p><img src="figures/its_study_time2.png" width="540" /></p>
+</div>
+<div id="ios-1" class="section level3">
+<h3>iOS</h3>
+<p>On Apple’s devices, tools for this include <a href="https://itunes.apple.com/gb/app/sidekick-mattie/id1166327958?mt=8&amp;ign-mpt=uo%3D4">Mattie</a>:</p>
+<p><img src="figures/mattie.jpg" width="115" /></p>
+</div>
+</div>
+</div>
+<div id="advance-your-goals" class="section level1 tabset">
+<h1>Advance your goals</h1>
+<div id="make-new-tabs-remind-you-of-your-goals" class="section level2">
+<h2>Make new tabs remind you of your goals</h2>
+<p>On <strong>laptop</strong>, you can make new tabs remind you of what you need to do.</p>
+<p>For example, use the Chrome extension <a href="https://chrome.google.com/webstore/detail/focus/paipcheolflniajdfeglfpddafcklepg?hl=gb">Focus</a> to turn new tabs into a todo-list:</p>
+<p><img src="figures/focus_tab.png" width="1679" /></p>
+<p>This extension also lets you block distracting websites while you focus on a specific task.</p>
+<p>Search through the browser extension stores for a similar extension which might be useful to you: - <a href="https://safari-extensions.apple.com">Safari Extensions</a> - <a href="https://chrome.google.com/webstore/category/extensions?hl=en">Chrome Extensions</a> - <a href="https://addons.mozilla.org/en-GB/firefox/">Firefox Add-Ons</a></p>
+</div>
+<div id="motivational-quotes" class="section level2">
+<h2>Motivational quotes</h2>
+<p>On <strong>laptop</strong>, use new tabs to remind you of the important things in life.</p>
+<p>For example, use the Chrome extension <a href="https://chrome.google.com/webstore/detail/daily-motivation-motivati/nonnkklkpbokmppgochfdamhihaijdin?hl=gb">Daily Motivation</a> to put motivational quotes on new tabs:</p>
+<p><img src="figures/daily_motivation.png" width="913" /></p>
+<p>Search through the browser extension stores for similar extensions for your browser: - <a href="https://safari-extensions.apple.com">Safari Extensions</a> - <a href="https://chrome.google.com/webstore/category/extensions?hl=en">Chrome Extensions</a> - <a href="https://addons.mozilla.org/en-GB/firefox/">Firefox Add-Ons</a></p>
+</div>
+<div id="replace-facebooks-newsfeed-with-a-todo-list" class="section level2">
+<h2>Replace Facebook’s newsfeed with a todo-list</h2>
+<p>On <strong>laptop</strong>, you can also replace Facebook’s newsfeed with other content.</p>
+<p>For example, use the Chrome extension <a href="https://chrome.google.com/webstore/detail/todobook/ihbejplhkeifejcpijadinaicidddbde?hl=gb">Todobook</a> to replace Facebook’s newsfeed with a todo list.</p>
+<p><img src="figures/todobook.png" width="1540" /></p>
+<p>Search through the browser extension stores for similar extensions for your browser: - <a href="https://safari-extensions.apple.com">Safari Extensions</a> - <a href="https://chrome.google.com/webstore/category/extensions?hl=en">Chrome Extensions</a> - <a href="https://addons.mozilla.org/en-GB/firefox/">Firefox Add-Ons</a></p>
+</div>
+<div id="automatically-redirect-yourself-away-from-distraction" class="section level2">
+<h2>Automatically redirect yourself away from distraction</h2>
+<p>On <strong>laptop</strong>, automatically redirect yourself away from distracting websites when you need to focus.</p>
+<p>For example, use the Chrome extension <a href="https://chrome.google.com/webstore/detail/timewarp/mmmhadpnjmokjbmgamifipkjddhlfkhi?hl=gb">Timewarp</a>:</p>
+<p><img src="figures/timewarp.png" width="1131" /></p>
+<p>Search through the browser extension stores for similar extensions for your browser: - <a href="https://safari-extensions.apple.com">Safari Extensions</a> - <a href="https://chrome.google.com/webstore/category/extensions?hl=en">Chrome Extensions</a> - <a href="https://addons.mozilla.org/en-GB/firefox/">Firefox Add-Ons</a></p>
+</div>
+<div id="periodic-reminders" class="section level2">
+<h2>Periodic reminders</h2>
+<p>Be mindful of what you’re supposed to be doing.</p>
+<p>For example, use the Chrome extension <a href="https://chrome.google.com/webstore/detail/gen4/pjkdlacnjfgkdbpojjfalmehngmlegnd/related?hl=gb">Gen4</a> to get periodic reminders of what you’re supposed to be doing while browsing the web:</p>
+<p><img src="figures/gen4.jpg" width="50%" /><img src="figures/gen4-2.jpg" width="50%" /></p>
+</div>
+</div>
+<div id="reward-or-punish-yourself" class="section level1 tabset">
+<h1>Reward or punish yourself</h1>
+<div id="protect-a-virtual-creature-by-sticking-with-your-intentions" class="section level2">
+<h2>Protect a virtual creature by sticking with your intentions</h2>
+<p>To get a little extra push of motivation to use your devices in the way you intended, add a little reward.</p>
+<p>One of the most popular tools for this is <a href="https://www.forestapp.cc/">Forest</a> which lets you grow virtual trees during focus sessions - the trees die if you do not stick with your goal…</p>
+<p><img src="figures/forest_iphone.png" width="30%" /><img src="figures/forest_android.png" width="30%" /><img src="figures/forest_chrome.png" width="30%" /></p>
+<p>Forest is available for <a href="https://itunes.apple.com/app/forest-stay-focused-stop-phubbing/id866450515">iOS</a>, <a href="https://play.google.com/store/apps/details?id=cc.forestapp">Android</a>, and as a <a href="https://chrome.google.com/webstore/detail/forest-stay-focused-be-pr/kjacjjdnoddnpbbcjilcajfhhbdhkpgk">Chrome extension</a>.</p>
+<p>Other options include <a href="https://docs.google.com/spreadsheets/d/1BVBCBOZQY_K7qYmDiSIail07F6D1iDG1OkoFyazb5Y4/edit#gid=777024457">Feed the Goat (Chrome Extension)</a> or <a href="https://itunes.apple.com/us/app/flora-focus-study-pomodoro/id1225155794?mt=8&amp;ign-mpt=uo%3D4">Flora (iOS)</a>:</p>
+<p><img src="figures/flora.png" width="45%" /><img src="figures/feed_goat.png" width="45%" /></p>
+</div>
+<div id="writing-under-pressure" class="section level2">
+<h2>Writing under pressure</h2>
+<p>The online tool <a href="https://www.themostdangerouswritingapp.com">The Most Dangerous Writing App</a> helps you get into the flow of writing by adding pressure: Set a target word count or duration, begin typing, and if you stop typing for more than a few seconds before you hit the goal, all you have typed is deleted! Perfect for simulating the feeling of being so close to a deadline that procrastination is no longer an option!</p>
+<p><img src="figures/worlds_dangerous.png" width="692" /></p>
+</div>
+</div>
+<div id="change-your-digital-environment" class="section level1 tabset">
+<h1>Change your digital environment</h1>
+<div id="go-grey-scale-smartphone" class="section level2">
+<h2>Go grey-scale (smartphone)</h2>
+<p>A simple way to make your smartphone less distracting is to turn it greyscale when you do not need color.</p>
+<p><img src="figures/greyscale.png" width="375" /></p>
+<p>On iPhone, set a triple-tap on the Home button to toggle grey scale on and off: - <strong>Settings &gt; Accessibility &gt; Accessibility Shortcut &gt; Colour Filters</strong></p>
+<p>Newer versions of the Android operating system may include a gray scale toggle in your phone’s quick settings.</p>
+</div>
+<div id="arrange-your-apps-smartphone" class="section level2">
+<h2>Arrange your apps (smartphone)</h2>
+<p>Arrange your apps so that the home screen is minimalistic and simple, and so that the apps you’d like to use less often require a bit more effort to reach.</p>
+<p>For example, limit your first page of apps to only apps you use for quick in-and-out tasks - move the rest of your apps, especially mindless choices, off the first page and into folders.</p>
+<p><img src="figures/off_page.png" width="45%" /><img src="figures/off_page2.png" width="45%" /></p>
+</div>
+<div id="do-not-disturb-during-set-hours" class="section level2">
+<h2>Do not disturb during set hours</h2>
+<p>Schedule do not disturb, so that during certain hours (e.g. 9pm to 8am) only calls from your favorite contacts go through directly.</p>
+<p><img src="figures/do_not_disturb.png" width="375" /></p>
+<p><em>Wind Down</em> on newer versions of Android also provides this feature, as well as the ability to automatically turn your phone greyscale when getting ready for bed.</p>
+</div>
+<div id="manage-notifications" class="section level2">
+<h2>Manage notifications</h2>
+<p>Be ruthless about which apps you give the ability to send you notifications.</p>
+<p>On <strong>iOS</strong>, go to <strong>Settings &gt; Notifications</strong> and carefully consider which apps should be allowed to disturb you.</p>
+<p>On a <strong>Mac</strong>, newer operating systems also include a Do Not Disturb mode, for when you need to focus without having popups about incoming email etc.:</p>
+<p><img src="figures/do_not_disturb_mac.png" width="349" /></p>
+</div>
+<div id="use-full-screen-laptop" class="section level2">
+<h2>Use full-screen (laptop)</h2>
+<p>On a laptop, try limiting the amount of information available to you to what you actually need for your task.</p>
+<p>On <strong>Mac</strong>, one way to do this is by using full screen mode to e.g. put two tools you need side by side:</p>
+<div class="figure">
+<img src="figures/full_screen1.png" alt="Rather than this..." width="1680" />
+<p class="caption">
+Rather than this…
+</p>
+</div>
+<div class="figure">
+<img src="figures/full_screen_2.png" alt="... try this" width="1680" />
+<p class="caption">
+… try this
+</p>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
