@@ -16,8 +16,8 @@ library(knitr)
 
 
 # Reward or punish yourself {.tabset}
-## Protect a virtual creature by sticking with your intentions
-To get a little extra push of motivation to use your devices in the way you intended, add a little reward.
+## Protect a virtual creature
+To get a little extra push of motivation to use your devices in the way you intended, add a reward.
 
 One of the most popular tools for this is [Forest](https://www.forestapp.cc/) which lets you grow virtual trees during focus sessions - the trees die if you do not stick with your goal...
 
@@ -31,14 +31,16 @@ Forest is available for [iOS](https://itunes.apple.com/app/forest-stay-focused-s
 
 Other options include [Feed the Goat (Chrome Extension)](https://docs.google.com/spreadsheets/d/1BVBCBOZQY_K7qYmDiSIail07F6D1iDG1OkoFyazb5Y4/edit#gid=777024457) or [Flora (iOS)](https://itunes.apple.com/us/app/flora-focus-study-pomodoro/id1225155794?mt=8&ign-mpt=uo%3D4):
 
-```{r, out.width="45%"}
+```{r, out.width="40%"}
 knitr::include_graphics("figures/flora.png")
 knitr::include_graphics("figures/feed_goat.png")
 ```
 
 ## Writing under pressure
-The online tool [The Most Dangerous Writing App](https://www.themostdangerouswritingapp.com) helps you get into the flow of writing by adding pressure:
+The online writing aapp [The Most Dangerous Writing App](https://www.themostdangerouswritingapp.com) helps you get into the flow of writing by adding pressure:
+
 Set a target word count or duration, begin typing, and if you stop typing for more than a few seconds before you hit the goal, all you have typed is deleted!
+
 Perfect for simulating the feeling of being so close to a deadline that procrastination is no longer an option!
 
 ```{r}

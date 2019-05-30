@@ -23,6 +23,7 @@ If particular websites or apps distract you, try blocking your access to them fo
 ### Laptop
 Many browser extensions allow you to block websites. 
 Discover these by searching through the web stores for extensions for the web browser you use:
+
 - [Safari Extensions](https://safari-extensions.apple.com)
 - [Chrome Extensions](https://chrome.google.com/webstore/category/extensions?hl=en)
 - [Firefox Add-Ons](https://addons.mozilla.org/en-GB/firefox/)
@@ -34,7 +35,7 @@ knitr::include_graphics("figures/chrome_block_result.png")
 ```
 
 ### Smartphone
-On Android, the most popular app blocker is [Stay Focused](https://play.google.com/store/apps/details?id=com.stayfocused&hl=en_GB):
+On **Android**, one of the most popular app blocker is [Stay Focused](https://play.google.com/store/apps/details?id=com.stayfocused&hl=en_GB):
 
 ```{r, out.width="45%"}
 knitr::include_graphics("figures/stay_focused_block.png")
@@ -42,9 +43,13 @@ knitr::include_graphics("figures/stay_focused_limit.png")
 #knitr::include_graphics("figures/stay_focused_options.png")
 ```
 
-On iOS, you can use Apple's built-in app [Screen Time](https://support.apple.com/en-gb/HT208982) to block your own access to particular apps.
+On **iOS**, use Apple's built-in app [Screen Time](https://support.apple.com/en-gb/HT208982) to block your own access to particular apps.
 
-To do so, go to **Settings -> Screen Time -> App Limits**
+You can do so in two ways:
+
+- *Restrict category of apps*: Go to **Settings -> Screen Time -> App Limits**. iOS will ask you to pick an entire category of apps to apply a time restriction to. 
+- *Restrict specific app*: Go to **Settings -> Screen Time**. Find the app in the list of “Most Used” and tap it. You’ll see an “add limit” option near the bottom of the following screen.
+
 
 ## Remove features
 On laptop, use browser extensions to remove features of websites you find distracting.
@@ -56,19 +61,26 @@ knitr::include_graphics("figures/fb_newsfeed.png")
 knitr::include_graphics("figures/youtube_minimal.png")
 ```
 
+<br>
+
 The Chrome extension [Click to Remove Element](https://chrome.google.com/webstore/detail/click-to-remove-element/jcgpghgjhhahcefnfpbncdmhhddedhnk?hl=gb) allows you to remove elements from any website with a single click:
 
-```{r}
+```{r, out.width="80%"}
 knitr::include_graphics("figures/remove_element.jpg")
 ```
 
+<br>
+
 If you use Gmail in a browser, [Inbox When Ready](https://chrome.google.com/webstore/detail/inbox-when-ready-for-gmai/cdedhgmbfjhobfnphaoihdfmnjidcpim?hl=gb) hides your inbox by default, until you deliberately click that you wish to see it:
 
-```{r}
+```{r, out.width="80%"}
 knitr::include_graphics("figures/inbox_ready.jpg")
 ```
 
+<br>
+
 Search through the browser extension stores for a similar extension which might be useful to you:
+
 - [Safari Extensions](https://safari-extensions.apple.com)
 - [Chrome Extensions](https://chrome.google.com/webstore/category/extensions?hl=en)
 - [Firefox Add-Ons](https://addons.mozilla.org/en-GB/firefox/)
@@ -78,19 +90,23 @@ When you try to focus on writing, consider getting all distractions out of the w
 
 For smartphones, there are dedicated minimalistic writing tools such as [JotterPad](https://play.google.com/store/apps/details?id=com.jotterpad.x&hl=en&gl=us):
 
-```{r}
+```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/jotterpad.png")
 ```
 
+<br>
+
 If you use Google Docs on laptop, there are browser extensions to make the interface super minimalistic, for example [DistractionFree for Safari](https://safari-extensions.apple.com/details/?id=com.kallepersson.distractionfree-BBWY83BGU8):
 
-```{r}
+```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/google_docs.png")
 ```
 
+<br>
+
 Even Microsoft Word now includes a minimalistic 'Focus' mode:
 
-```{r, out.width="45%"}
+```{r, out.width="50%"}
 knitr::include_graphics("figures/word_focus1.png")
 knitr::include_graphics("figures/word_focus2.png")
 ```
@@ -102,21 +118,23 @@ A few tools can force your devices into 'monotasking' mode.
 ### Laptop
 [Cold Turkey Writer](https://getcoldturkey.com/writer/) allows you to turn your laptop into a typewriter until you've typed a specific number of words, or for a specific length of time:
 
-```{r}
+```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/cold_turkey.png")
 ```
 
 ### Smartphone
 On Android, simulate a similar situation with the app [Dumbphone](https://play.google.com/store/apps/details?id=bg.bozho.dumbphone&hl=en&gl=us):
 
-```{r}
+```{r, out.width="60%", fig.align='center'}
 knitr::include_graphics("figures/dumbphone.png")
 ```
+
+<br> 
 
 On iOS, get the same effect using [Screen Time](https://support.apple.com/en-gb/HT208982)'s 'Downtime' feature.
 When 'Downtime' is scheduled, only phone calls and apps that you choose to allow are available:
 
-```{r, out.width="45%"}
+```{r, out.width="45%", fig.align='center'}
 knitr::include_graphics("figures/downtime1.png")
 knitr::include_graphics("figures/downtime2.png")
 ```

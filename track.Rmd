@@ -21,27 +21,31 @@ Various tools are available to see how your spend time on your devices, and comp
 
 On **laptop**, one of the most popular tools is [RescueTime](https://www.rescuetime.com): 
 
-```{r}
+```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/rescue_time.png")
 ```
+
+<br>
 
 ### Android
 On **Android**, apps such as [Usage Time](https://play.google.com/store/apps/details?id=com.agooday.screentime&hl=en&gl=us) provide the same functionality:
 
-```{r}
+```{r, out.width="50%", fig.align='center'}
 knitr::include_graphics("figures/app_usage.png")
 ```
 
+<br>
+
 Google provides the same functionality with [Digital Wellbeing](https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&hl=en_GB), which is pre-installed on many newer Android devices (Settings > Digital Wellbeing):
 
-```{r}
+```{r, out.width="90%", fig.align='center'}
 knitr::include_graphics("figures/digi_wellbeing.jpeg")
 ```
 
 ### iOS
 On iOS, [Screen Time](https://support.apple.com/en-gb/HT208982) provides this ability (**Settings -> Screen Time**):
 
-```{r}
+```{r, out.width="50%", fig.align='center'}
 knitr::include_graphics("figures/screentime.png")
 ```
 
@@ -54,27 +58,33 @@ This is often done with the 'Pomodoro' technique, where you break your work down
 ### Laptop
 Numerous tools support this, for example [Be Focused](https://xwavesoft.com/be-focused-pro-for-iphone-ipad-mac-os-x.html):
 
-```{r}
+```{r, out.width="30%", fig.align='center'}
 knitr::include_graphics("figures/pomodoro.png")
 ```
 
+<br>
+
 You can combine this with blocking distracting websites during work sessions, for example using the Chrome extension [FocusMe](https://chrome.google.com/webstore/detail/focusme-a-pomodoro-timer/koebbleaefghpjjmghelhjboilcmfpad?hl=gb):
 
-```{r}
+```{r, out.width="50%", fig.align='center'}
 knitr::include_graphics("figures/focusme.png")
 ```
+
+<br> 
 
 ### Android
 Apps supporting this include [Its Study Time](https://play.google.com/store/apps/details?id=com.deGans.itsStudyTime&hl=en&gl=us):
 
-```{r}
+```{r, out.width="40%", fig.align='center'}
 knitr::include_graphics("figures/its_study_time2.png")
 ```
+
+<br>
 
 ### iOS
 On Apple's devices, tools for this include [Mattie](https://itunes.apple.com/gb/app/sidekick-mattie/id1166327958?mt=8&ign-mpt=uo%3D4):
 
-```{r}
+```{r, out.width="40%", fig.align='center'}
 knitr::include_graphics("figures/mattie.jpg")
 ```
 
