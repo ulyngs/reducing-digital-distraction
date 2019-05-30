@@ -4,8 +4,16 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Tools"
-      href: tools.html
+    - text: "Block/remove"
+      href: block.html
+    - text: "Track yourself"
+      href: track.html
+    - text: "Advance goals"
+      href: goals.html
+    - text: "Reward/punish"
+      href: reward.html
+    - text: "Environment"
+      href: environment.html
 output:
   html_document:
     theme: cosmo

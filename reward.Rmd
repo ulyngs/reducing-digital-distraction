@@ -1,0 +1,46 @@
+---
+output:
+  html_document:
+    theme: cosmo
+    self_contained: false
+    number_sections: false
+    css: style.css
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(knitr)
+```
+
+
+# Reward or punish yourself {.tabset}
+## Protect a virtual creature by sticking with your intentions
+To get a little extra push of motivation to use your devices in the way you intended, add a little reward.
+
+One of the most popular tools for this is [Forest](https://www.forestapp.cc/) which lets you grow virtual trees during focus sessions - the trees die if you do not stick with your goal...
+
+```{r, out.width="30%"}
+knitr::include_graphics("figures/forest_iphone.png")
+knitr::include_graphics("figures/forest_android.png")
+knitr::include_graphics("figures/forest_chrome.png")
+```
+
+Forest is available for [iOS](https://itunes.apple.com/app/forest-stay-focused-stop-phubbing/id866450515), [Android](https://play.google.com/store/apps/details?id=cc.forestapp), and as a [Chrome extension](https://chrome.google.com/webstore/detail/forest-stay-focused-be-pr/kjacjjdnoddnpbbcjilcajfhhbdhkpgk).
+
+Other options include [Feed the Goat (Chrome Extension)](https://docs.google.com/spreadsheets/d/1BVBCBOZQY_K7qYmDiSIail07F6D1iDG1OkoFyazb5Y4/edit#gid=777024457) or [Flora (iOS)](https://itunes.apple.com/us/app/flora-focus-study-pomodoro/id1225155794?mt=8&ign-mpt=uo%3D4):
+
+```{r, out.width="45%"}
+knitr::include_graphics("figures/flora.png")
+knitr::include_graphics("figures/feed_goat.png")
+```
+
+## Writing under pressure
+The online tool [The Most Dangerous Writing App](https://www.themostdangerouswritingapp.com) helps you get into the flow of writing by adding pressure:
+Set a target word count or duration, begin typing, and if you stop typing for more than a few seconds before you hit the goal, all you have typed is deleted!
+Perfect for simulating the feeling of being so close to a deadline that procrastination is no longer an option!
+
+```{r}
+knitr::include_graphics("figures/worlds_dangerous.png")
+```
