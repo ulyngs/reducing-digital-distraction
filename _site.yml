@@ -2,8 +2,6 @@ name: "Reducing Digital Distraction"
 navbar:
   title: "Reducing Digital Distraction"
   left:
-    - text: "Home"
-      href: index.html
     - text: "Block/remove"
       href: block.html
     - text: "Track yourself"
