@@ -1,7 +1,11 @@
-.section.level1.tabset {
-  margin-top: 1em;
+.section.level1 {
+  margin-top: 1.5em;
 }
 
 .section.level3 {
   margin-top: 2em;
+}
+
+.title {
+  display: none;
 }

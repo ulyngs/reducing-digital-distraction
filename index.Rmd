@@ -2,8 +2,11 @@
 title: "Reducing Digital Distraction"
 ---
 
+# Reducing Digital Distraction
 Welcome to the accompanying website to the **Re**ducing **D**igital **D**istraction (ReDD) workshop.
 
 Here, you will find a bit of further detail about the tools and strategies listed on the cards handed out in the workshop.
 
-You can scroll through a large number of tools here: [tinyurl.com/digital-selfcontrol](https://docs.google.com/spreadsheets/d/1BVBCBOZQY_K7qYmDiSIail07F6D1iDG1OkoFyazb5Y4/edit#gid=777024457).
+On the pages [Block/Remove](https://ulyngs.github.io/reducing-digital-distraction/block.html), [Track yourself](https://ulyngs.github.io/reducing-digital-distraction/track.html), [Advance goals](https://ulyngs.github.io/reducing-digital-distraction/goals.html), [Reward/punish](https://ulyngs.github.io/reducing-digital-distraction/reward.html), and [Environment](https://ulyngs.github.io/reducing-digital-distraction/environment.html), you can read more about them.
+
+You can scroll through a large number of digital self-control tools, available on the Google Play, Chrome Web, and Apple App stores, here: [tinyurl.com/digital-selfcontrol](https://docs.google.com/spreadsheets/d/1BVBCBOZQY_K7qYmDiSIail07F6D1iDG1OkoFyazb5Y4/edit#gid=777024457).
