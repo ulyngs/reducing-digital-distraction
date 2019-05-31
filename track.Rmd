@@ -1,4 +1,5 @@
 ---
+title: "ReDD: Track yourself"
 output:
   html_document:
     theme: cosmo

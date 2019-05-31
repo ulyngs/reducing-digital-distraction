@@ -1,4 +1,5 @@
 ---
+title: "ReDD: Reward/punish"
 output:
   html_document:
     theme: cosmo

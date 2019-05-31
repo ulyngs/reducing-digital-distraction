@@ -1,4 +1,5 @@
 ---
+title: "ReDD: Digital environment"
 output:
   html_document:
     theme: cosmo

@@ -1,4 +1,5 @@
 ---
+title: "ReDD: Advance your goals"
 output:
   html_document:
     theme: cosmo
