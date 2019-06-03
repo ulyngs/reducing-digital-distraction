@@ -29,14 +29,21 @@ Discover these by searching through the web stores for extensions for the web br
 - [Chrome Extensions](https://chrome.google.com/webstore/category/extensions?hl=en)
 - [Firefox Add-Ons](https://addons.mozilla.org/en-GB/firefox/)
 
-The most popular website blocker for Chrome is [Block Site - Website Blocker for Chrome™](https://chrome.google.com/webstore/detail/block-site-website-blocke/eiimnmioipafcokbfikbljfdeojpcgbh/related?hl=en):
+The most popular website blocker for **Chrome** is [Block Site - Website Blocker for Chrome™](https://chrome.google.com/webstore/detail/block-site-website-blocke/eiimnmioipafcokbfikbljfdeojpcgbh/related?hl=en):
 ```{r, out.width="45%"}
 knitr::include_graphics("figures/chrome_block_setup.png")
 knitr::include_graphics("figures/chrome_block_result.png")
 ```
 
+On **Safari**, try [Roadblock](https://safari-extensions.apple.com/details/?id=com.obiedcorner.Roadblock-WE58FS6Q6B):
+
+```{r, out.width="50%", fig.align='center'}
+knitr::include_graphics("figures/roadblock.png")
+```
+
+
 ### Smartphone
-On **Android**, one of the most popular app blocker is [Stay Focused](https://play.google.com/store/apps/details?id=com.stayfocused&hl=en_GB):
+On **Android**, one of the most popular app blockers is [Stay Focused](https://play.google.com/store/apps/details?id=com.stayfocused&hl=en_GB):
 
 ```{r, out.width="45%"}
 knitr::include_graphics("figures/stay_focused_block.png")
@@ -55,30 +62,49 @@ You can do so in two ways:
 ## Remove features
 On laptop, use browser extensions to remove features of websites you find distracting.
 
-For example, use extensions to remove Facebook's newsfeed (e.g. with Chrome's [News Feed Eradicator](https://chrome.google.com/webstore/detail/news-feed-eradicator-for/fjcldmjmjhkklehbacihaiopjklihlgg)), or recommended videos from YouTube (e.g. with Safari's [Distraction Blocker for YouTube](https://safari-extensions.apple.com/details/?id=com.robertjeffs.distractionblockerforyoutube-W9AT75TA27)):
+### Facebook
+You can use extensions to remove Facebook's newsfeed.
 
-```{r, out.width="45%"}
+On Chrome, try [News Feed Eradicator](https://chrome.google.com/webstore/detail/news-feed-eradicator-for/fjcldmjmjhkklehbacihaiopjklihlgg).
+
+```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/fb_newsfeed.png")
+```
+
+On Safari, try [Newsfeed Blocker for Facebook](https://safari-extensions.apple.com/details/?id=com.nolandey.bundleid-A5P7J5U845).
+
+
+You can also use extensions to remove **numerical metrics** on Facebook:
+
+```{r, out.width="80%", fig.align='center'}
+knitr::include_graphics("figures/fb-demetricator.jpg")
+```
+
+Find installation instructions [here](https://bengrosser.com/projects/facebook-demetricator/install/).
+
+
+### YouTube
+On **Safari**, remove recommended videos from YouTube with the [Distraction Blocker for YouTube](https://safari-extensions.apple.com/details/?id=com.robertjeffs.distractionblockerforyoutube-W9AT75TA27)):
+
+```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/youtube_minimal.png")
 ```
 
-<br>
 
-The Chrome extension [Click to Remove Element](https://chrome.google.com/webstore/detail/click-to-remove-element/jcgpghgjhhahcefnfpbncdmhhddedhnk?hl=gb) allows you to remove elements from any website with a single click:
+### Gmail
+If you use Gmail in a browser, [Inbox When Ready](https://chrome.google.com/webstore/detail/inbox-when-ready-for-gmai/cdedhgmbfjhobfnphaoihdfmnjidcpim?hl=gb) hides your inbox by default, until you deliberately click that you wish to see it:
+
+```{r, out.width="80%", fig.align='center'}
+knitr::include_graphics("figures/inbox_ready.jpg")
+```
+
+
+### Anything
+On **Chrome**, the extension [Click to Remove Element](https://chrome.google.com/webstore/detail/click-to-remove-element/jcgpghgjhhahcefnfpbncdmhhddedhnk?hl=gb) allows you to remove elements from any website with a single click:
 
 ```{r, out.width="80%"}
 knitr::include_graphics("figures/remove_element.jpg")
 ```
-
-<br>
-
-If you use Gmail in a browser, [Inbox When Ready](https://chrome.google.com/webstore/detail/inbox-when-ready-for-gmai/cdedhgmbfjhobfnphaoihdfmnjidcpim?hl=gb) hides your inbox by default, until you deliberately click that you wish to see it:
-
-```{r, out.width="80%"}
-knitr::include_graphics("figures/inbox_ready.jpg")
-```
-
-<br>
 
 Search through the browser extension stores for a similar extension which might be useful to you:
 
@@ -86,18 +112,12 @@ Search through the browser extension stores for a similar extension which might 
 - [Chrome Extensions](https://chrome.google.com/webstore/category/extensions?hl=en)
 - [Firefox Add-Ons](https://addons.mozilla.org/en-GB/firefox/)
 
+
 ## Minimal writing tools
 When you try to focus on writing, consider getting all distractions out of the way.
 
-For smartphones, there are dedicated minimalistic writing tools such as [JotterPad](https://play.google.com/store/apps/details?id=com.jotterpad.x&hl=en&gl=us):
-
-```{r, out.width="80%", fig.align='center'}
-knitr::include_graphics("figures/jotterpad.png")
-```
-
-<br>
-
-If you use Google Docs on laptop, there are browser extensions to make the interface super minimalistic, for example [DistractionFree for Safari](https://safari-extensions.apple.com/details/?id=com.kallepersson.distractionfree-BBWY83BGU8):
+### Laptop
+If you use **Google Docs** there are browser extensions to make the interface super minimalistic, for example [DistractionFree for Safari](https://safari-extensions.apple.com/details/?id=com.kallepersson.distractionfree-BBWY83BGU8):
 
 ```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/google_docs.png")
@@ -105,12 +125,21 @@ knitr::include_graphics("figures/google_docs.png")
 
 <br>
 
-Even Microsoft Word now includes a minimalistic 'Focus' mode:
+**Microsoft Word** also includes a minimalistic 'Focus' mode:
 
 ```{r, out.width="50%"}
 knitr::include_graphics("figures/word_focus1.png")
 knitr::include_graphics("figures/word_focus2.png")
 ```
+
+
+### Smartphone
+On **Android**, try [JotterPad](https://play.google.com/store/apps/details?id=com.jotterpad.x&hl=en&gl=us):
+
+```{r, out.width="80%", fig.align='center'}
+knitr::include_graphics("figures/jotterpad.png")
+```
+
 
 
 ## Go monotasking / dumbphone
@@ -135,7 +164,7 @@ knitr::include_graphics("figures/dumbphone.png")
 On iOS, get the same effect using [Screen Time](https://support.apple.com/en-gb/HT208982)'s 'Downtime' feature.
 When 'Downtime' is scheduled, only phone calls and apps that you choose to allow are available:
 
-```{r, out.width="45%", fig.align='center'}
+```{r, out.width="40%"}
 knitr::include_graphics("figures/downtime1.png")
 knitr::include_graphics("figures/downtime2.png")
 ```
