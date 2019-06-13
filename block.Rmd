@@ -22,13 +22,6 @@ library(knitr)
 If particular websites or apps distract you, try blocking your access to them for some time or after a certain amount of time has passed.
 
 ### Laptop
-Many browser extensions allow you to block websites. 
-Discover these by searching through the web stores for extensions for the web browser you use:
-
-- [Safari Extensions](https://safari-extensions.apple.com)
-- [Chrome Extensions](https://chrome.google.com/webstore/category/extensions?hl=en)
-- [Firefox Add-Ons](https://addons.mozilla.org/en-GB/firefox/)
-
 The most popular website blocker for **Chrome** is [Block Site - Website Blocker for Chrome™](https://chrome.google.com/webstore/detail/block-site-website-blocke/eiimnmioipafcokbfikbljfdeojpcgbh/related?hl=en):
 ```{r, out.width="45%"}
 knitr::include_graphics("figures/chrome_block_setup.png")
@@ -41,6 +34,17 @@ On **Safari**, try [Roadblock](https://safari-extensions.apple.com/details/?id=c
 knitr::include_graphics("figures/roadblock.png")
 ```
 
+On **Firefox**, try [Impulse Blocker](https://addons.mozilla.org/en-US/firefox/addon/impulse-blocker/?src=search):
+
+```{r, out.width="50%", fig.align='center'}
+knitr::include_graphics("figures/impulse_control.png")
+```
+
+You can find many others by searching through the extensions store for the web browser you use:
+
+- [Safari Extensions](https://safari-extensions.apple.com)
+- [Chrome Extensions](https://chrome.google.com/webstore/category/extensions?hl=en)
+- [Firefox Add-Ons](https://addons.mozilla.org/en-GB/firefox/)
 
 ### Smartphone
 On **Android**, one of the most popular app blockers is [Stay Focused](https://play.google.com/store/apps/details?id=com.stayfocused&hl=en_GB):
@@ -60,11 +64,10 @@ You can do so in two ways:
 
 
 ## Remove features
-On laptop, use browser extensions to remove features of websites you find distracting.
+You can also use browser extensions to remove features of websites you find distracting.
 
 ### Facebook
-You can use extensions to remove Facebook's newsfeed.
-
+#### Removing the newsfeed
 On Chrome, try [News Feed Eradicator](https://chrome.google.com/webstore/detail/news-feed-eradicator-for/fjcldmjmjhkklehbacihaiopjklihlgg).
 
 ```{r, out.width="80%", fig.align='center'}
@@ -73,29 +76,55 @@ knitr::include_graphics("figures/fb_newsfeed.png")
 
 On Safari, try [Newsfeed Blocker for Facebook](https://safari-extensions.apple.com/details/?id=com.nolandey.bundleid-A5P7J5U845).
 
+On iPhones, try [Feedless](https://apps.apple.com/us/app/feedless-newsfeed-blocker/id1339509325) to remove Facebook's newsfeed in Safari (this extension can also block the feed in Instagram and Twitter):
 
+```{r, out.width="80%", fig.align='center'}
+knitr::include_graphics("figures/feedless.png")
+```
+
+
+#### Removing numerical metrics
 You can also use extensions to remove **numerical metrics** on Facebook:
 
 ```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/fb-demetricator.jpg")
 ```
 
-Find installation instructions [here](https://bengrosser.com/projects/facebook-demetricator/install/).
+Find installation instructions for the **Facebook Demetricator** [here](https://bengrosser.com/projects/facebook-demetricator/install/).
 
 
 ### YouTube
-On **Safari**, remove recommended videos from YouTube with the [Distraction Blocker for YouTube](https://safari-extensions.apple.com/details/?id=com.robertjeffs.distractionblockerforyoutube-W9AT75TA27)):
+On **Chrome**, remove recommended videos from YouTube with the extension [Remove YouTube Recommended Videos](https://chrome.google.com/webstore/detail/remove-youtube-recommende/khncfooichmfjbepaaaebmommgaepoid):
+
+```{r, out.width="80%", fig.align='center'}
+knitr::include_graphics("figures/chrome_youtube.jpg")
+```
+
+
+On **Safari**, use the [Distraction Blocker for YouTube](https://safari-extensions.apple.com/details/?id=com.robertjeffs.distractionblockerforyoutube-W9AT75TA27)):
 
 ```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/youtube_minimal.png")
 ```
 
+On **Firefox**, use [Remove Youtube's Suggestions](https://addons.mozilla.org/en-US/firefox/addon/remove-youtube-s-suggestions/):
+
+```{r, out.width="80%", fig.align='center'}
+knitr::include_graphics("figures/firefox_youtube.png")
+```
+
 
 ### Gmail
-If you use Gmail in a browser, [Inbox When Ready](https://chrome.google.com/webstore/detail/inbox-when-ready-for-gmai/cdedhgmbfjhobfnphaoihdfmnjidcpim?hl=gb) hides your inbox by default, until you deliberately click that you wish to see it:
+If you use Gmail in a browser, the **Chrome** extension [Inbox When Ready](https://chrome.google.com/webstore/detail/inbox-when-ready-for-gmai/cdedhgmbfjhobfnphaoihdfmnjidcpim?hl=gb) hides your inbox by default, until you deliberately click that you wish to see it:
 
 ```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/inbox_ready.jpg")
+```
+
+For **Firefox**, the extension [Gmail Hide](https://addons.mozilla.org/en-US/firefox/addon/gmail-hide/?src=search) does the same thing:
+
+```{r, out.width="80%", fig.align='center'}
+knitr::include_graphics("figures/firefox_gmail.png")
 ```
 
 
@@ -106,24 +135,25 @@ On **Chrome**, the extension [Click to Remove Element](https://chrome.google.com
 knitr::include_graphics("figures/remove_element.jpg")
 ```
 
-Search through the browser extension stores for a similar extension which might be useful to you:
-
-- [Safari Extensions](https://safari-extensions.apple.com)
-- [Chrome Extensions](https://chrome.google.com/webstore/category/extensions?hl=en)
-- [Firefox Add-Ons](https://addons.mozilla.org/en-GB/firefox/)
+On **Firefox**, the extension [Remove HTML Elements](https://addons.mozilla.org/en-US/firefox/addon/remove-html-elements/?src=search) does the same thing.
 
 
 ## Minimal writing tools
 When you try to focus on writing, consider getting all distractions out of the way.
 
 ### Laptop
-If you use **Google Docs** there are browser extensions to make the interface super minimalistic, for example [DistractionFree for Safari](https://safari-extensions.apple.com/details/?id=com.kallepersson.distractionfree-BBWY83BGU8):
+If you use **Google Docs** there are browser extensions to make the interface super minimalistic.
+
+On **Chrome**, try [Distraction Free Mode for Google Docs](https://chrome.google.com/webstore/detail/distraction-free-mode-for/blmejkgbnceohgjfnoiegdlbfkmpkeha).
+
+This extension is also available for [**Firefox**](Distraction Free Mode for Google Docs](https://addons.mozilla.org/en-US/firefox/addon/distraction-free-google-docs/) and [**Safari**](https://safari-extensions.apple.com/details/?id=com.kallepersson.distractionfree-BBWY83BGU8):
 
 ```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/google_docs.png")
 ```
 
 <br>
+
 
 **Microsoft Word** also includes a minimalistic 'Focus' mode:
 
@@ -139,7 +169,6 @@ On **Android**, try [JotterPad](https://play.google.com/store/apps/details?id=co
 ```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/jotterpad.png")
 ```
-
 
 
 ## Go monotasking / dumbphone

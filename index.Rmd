@@ -9,6 +9,6 @@ Here, you can find further details about the tools and strategies listed on the 
 
 Read more on the pages [Block/Remove](https://ulyngs.github.io/reducing-digital-distraction/block.html), [Track yourself](https://ulyngs.github.io/reducing-digital-distraction/track.html), [Advance goals](https://ulyngs.github.io/reducing-digital-distraction/goals.html), [Reward/punish](https://ulyngs.github.io/reducing-digital-distraction/reward.html), and [Environment](https://ulyngs.github.io/reducing-digital-distraction/environment.html).
 
-Many of the browser extensions and apps listed here, resulted from our paper [Self-Control in Cyberspace](https://dl.acm.org/citation.cfm?doid=3290605.3300361). 
-In this paper, we reviewed a large number of digital self-control tools, from the Google Play, Chrome Web, and Apple App stores.
-You can scroll through these tools here: [tinyurl.com/digital-selfcontrol](https://docs.google.com/spreadsheets/d/1BVBCBOZQY_K7qYmDiSIail07F6D1iDG1OkoFyazb5Y4/edit#gid=777024457).
+Most of the browser extensions and apps listed here come from our paper [Self-Control in Cyberspace](https://dl.acm.org/citation.cfm?doid=3290605.3300361). 
+In this paper, we reviewed a large number of digital self-control tools from the Google Play, Chrome Web, and Apple App stores.
+You can scroll through the full list of tools we reviewed here: [tinyurl.com/digital-selfcontrol](https://docs.google.com/spreadsheets/d/1BVBCBOZQY_K7qYmDiSIail07F6D1iDG1OkoFyazb5Y4/edit#gid=777024457).
