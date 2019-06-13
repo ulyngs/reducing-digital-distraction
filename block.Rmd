@@ -146,7 +146,7 @@ If you use **Google Docs** there are browser extensions to make the interface su
 
 On **Chrome**, try [Distraction Free Mode for Google Docs](https://chrome.google.com/webstore/detail/distraction-free-mode-for/blmejkgbnceohgjfnoiegdlbfkmpkeha).
 
-This extension is also available for [**Firefox**](Distraction Free Mode for Google Docs](https://addons.mozilla.org/en-US/firefox/addon/distraction-free-google-docs/) and [**Safari**](https://safari-extensions.apple.com/details/?id=com.kallepersson.distractionfree-BBWY83BGU8):
+This extension is also available for [**Firefox**](https://addons.mozilla.org/en-US/firefox/addon/distraction-free-google-docs/) and [**Safari**](https://safari-extensions.apple.com/details/?id=com.kallepersson.distractionfree-BBWY83BGU8):
 
 ```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/google_docs.png")
