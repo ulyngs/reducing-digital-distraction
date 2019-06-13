@@ -20,7 +20,7 @@ library(knitr)
 ## See how your spend your time
 Various tools are available to see how your spend time on your devices, and compare it to your goals.
 
-On **laptop**, one of the most popular tools is [RescueTime](https://www.rescuetime.com): 
+On **laptop**, one of the most popular is [RescueTime](https://www.rescuetime.com): 
 
 ```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/rescue_time.png")
@@ -57,7 +57,7 @@ To keep you on track, many people track themselves with a countdown timer.
 This is often done with the 'Pomodoro' technique, where you break your work down in intervals, typically 25 minutes, separated by short breaks.
 
 ### Laptop
-Numerous tools support this, for example [Be Focused](https://xwavesoft.com/be-focused-pro-for-iphone-ipad-mac-os-x.html):
+Numerous tools support this, for example [Be Focused](https://apps.apple.com/us/app/be-focused-focus-timer/id973134470?mt=12):
 
 ```{r, out.width="30%", fig.align='center'}
 knitr::include_graphics("figures/pomodoro.png")
@@ -65,16 +65,24 @@ knitr::include_graphics("figures/pomodoro.png")
 
 <br>
 
-You can combine this with blocking distracting websites during work sessions, for example using the Chrome extension [FocusMe](https://chrome.google.com/webstore/detail/focusme-a-pomodoro-timer/koebbleaefghpjjmghelhjboilcmfpad?hl=gb):
+
+Some website blockers also include Pomodoro timer functionality, for example the **Chrome** extension [FocusMe](https://chrome.google.com/webstore/detail/focusme-a-pomodoro-timer/koebbleaefghpjjmghelhjboilcmfpad?hl=gb):
 
 ```{r, out.width="50%", fig.align='center'}
 knitr::include_graphics("figures/focusme.png")
 ```
 
+On **Firefox** the [Pomodoro clock extension](https://addons.mozilla.org/en-US/firefox/addon/pomodoro-clock/?src=search) gives you a pomodoro timer in the browser:
+
+```{r, out.width="50%", fig.align='center'}
+knitr::include_graphics("figures/firefox_pomodoro.png")
+```
+
+
 <br> 
 
 ### Android
-Apps supporting this include [Its Study Time](https://play.google.com/store/apps/details?id=com.deGans.itsStudyTime&hl=en&gl=us):
+Apps pomorodo apps include [Its Study Time](https://play.google.com/store/apps/details?id=com.deGans.itsStudyTime&hl=en&gl=us):
 
 ```{r, out.width="40%", fig.align='center'}
 knitr::include_graphics("figures/its_study_time2.png")
@@ -83,7 +91,7 @@ knitr::include_graphics("figures/its_study_time2.png")
 <br>
 
 ### iOS
-On Apple's devices, tools for this include [Mattie](https://itunes.apple.com/gb/app/sidekick-mattie/id1166327958?mt=8&ign-mpt=uo%3D4):
+On Apple's devices, pomodoro apps include [Mattie](https://itunes.apple.com/gb/app/sidekick-mattie/id1166327958?mt=8&ign-mpt=uo%3D4):
 
 ```{r, out.width="40%", fig.align='center'}
 knitr::include_graphics("figures/mattie.jpg")
