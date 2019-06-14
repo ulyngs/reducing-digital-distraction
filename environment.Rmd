@@ -31,9 +31,9 @@ On iPhone, set a triple-tap on the Home button to toggle grey scale on and off:
 Newer versions of the Android operating system may include a gray scale toggle in your phone's quick settings.
 
 ## Arrange your apps (smartphone)
-Arrange your apps so that the home screen is minimalistic and simple, and so that the apps you'd like to use less often require a bit more effort to reach.
+Arrange your apps so that the home screen is minimalistic and simple, and the apps you want to use less often require a bit more effort to get to.
 
-For example, limit your first page of apps to only apps you use for quick in-and-out tasks - move the rest of your apps, especially mindless choices, off the first page and into folders.
+For example, limit your first page of apps to only apps you use for quick in-and-out tasks - then move the rest, especially those you find yourself using mindlessly, off the first page and into folders.
 
 ```{r, out.width="45%", fig.align='center'}
 knitr::include_graphics("figures/off_page.png")
@@ -42,6 +42,8 @@ knitr::include_graphics("figures/off_page2.png")
 
 ## Do not disturb during set hours
 Schedule do not disturb, so that during certain hours (e.g. 9pm to 8am) only calls from your favorite contacts go through directly.
+
+On iPhone go to **Settings > Do Not Disturb**
 
 ```{r, out.width="40%", fig.align='center'}
 knitr::include_graphics("figures/do_not_disturb.png")
@@ -63,7 +65,7 @@ knitr::include_graphics("figures/do_not_disturb_mac.png")
 ```
 
 ## Use full-screen (laptop)
-On a laptop, try limiting the amount of information available to you to what you actually need for your task.
+On a laptop, limit the amount of information available to just what you need for a task.
 
 On **Mac**, one way to do this is by using full screen mode to e.g. put two tools you need side by side:
 
@@ -74,4 +76,8 @@ knitr::include_graphics("figures/full_screen1.png")
 ```{r, out.width="80%", fig.align='center', fig.cap="... try this"}
 knitr::include_graphics("figures/full_screen_2.png")
 ```
+
+Here's a YouTube tutorial showing how to do this:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uRtWGeh5rJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
