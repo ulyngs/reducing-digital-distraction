@@ -76,12 +76,13 @@ knitr::include_graphics("figures/fb_newsfeed.png")
 
 On Safari, try [Newsfeed Blocker for Facebook](https://safari-extensions.apple.com/details/?id=com.nolandey.bundleid-A5P7J5U845).
 
-On iPhones, try [Feedless](https://apps.apple.com/us/app/feedless-newsfeed-blocker/id1339509325) to remove Facebook's newsfeed in Safari (this extension can also block the feed in Instagram and Twitter):
+On iPhone, you can use [Feedless](https://apps.apple.com/us/app/feedless-newsfeed-blocker/id1339509325) to remove Facebook's newsfeed in Safari (this extension can also block the feed in Instagram and Twitter).
 
-```{r, out.width="80%", fig.align='center'}
-knitr::include_graphics("figures/feedless.png")
-```
+<!-- ```{r, out.width="80%", fig.align='center'} -->
+<!-- knitr::include_graphics("figures/feedless.png") -->
+<!-- ``` -->
 
+<br>
 
 #### Removing numerical metrics
 You can also use extensions to remove **numerical metrics** on Facebook:
