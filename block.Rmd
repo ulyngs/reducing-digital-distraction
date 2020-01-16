@@ -10,7 +10,7 @@ output:
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, fig.align='left', out.width="80%")
 library(tidyverse)
 library(knitr)
 
@@ -22,23 +22,15 @@ library(knitr)
 If particular websites or apps distract you, try blocking your access to them for some time or after a certain amount of time has passed.
 
 ### Laptop
-The most popular website blocker for **Chrome** is [Block Site - Website Blocker for Chrome™](https://chrome.google.com/webstore/detail/block-site-website-blocke/eiimnmioipafcokbfikbljfdeojpcgbh/related?hl=en):
-```{r, out.width="45%"}
-knitr::include_graphics("figures/chrome_block_setup.png")
-knitr::include_graphics("figures/chrome_block_result.png")
+One of the best solutions, which works with all browsers, is [Cold Turkey Blocker](https://getcoldturkey.com/).
+
+The free version can block websites; the paid version can also block applications and set up schedules.
+
+```{r}
+knitr::include_graphics("figures/cold_turkey_blocker.png")
 ```
 
-On **Safari**, try [Roadblock](https://safari-extensions.apple.com/details/?id=com.obiedcorner.Roadblock-WE58FS6Q6B):
-
-```{r, out.width="50%", fig.align='center'}
-knitr::include_graphics("figures/roadblock.png")
-```
-
-On **Firefox**, try [Impulse Blocker](https://addons.mozilla.org/en-US/firefox/addon/impulse-blocker/?src=search):
-
-```{r, out.width="50%", fig.align='center'}
-knitr::include_graphics("figures/impulse_control.png")
-```
+Many, many browser extensions for specific browsers can do the same thing, e.g., ['Block Site' for Chrome](https://chrome.google.com/webstore/detail/block-site-website-blocke/eiimnmioipafcokbfikbljfdeojpcgbh/related?hl=en), ['Roadblock' for Safari](https://safari-extensions.apple.com/details/?id=com.obiedcorner.Roadblock-WE58FS6Q6B), or ['Impulse Blocker' for Firefox](https://addons.mozilla.org/en-US/firefox/addon/impulse-blocker/?src=search).
 
 You can find many others by searching through the extensions store for the web browser you use:
 
@@ -57,10 +49,8 @@ knitr::include_graphics("figures/stay_focused_limit.png")
 
 On **iOS**, use Apple's built-in app [Screen Time](https://support.apple.com/en-gb/HT208982) to block your own access to particular apps.
 
-You can do so in two ways:
-
-- *Restrict category of apps*: Go to **Settings -> Screen Time -> App Limits**. iOS will ask you to pick an entire category of apps to apply a time restriction to. 
-- *Restrict specific app*: Go to **Settings -> Screen Time**. Find the app in the list of “Most Used” and tap it. You’ll see an “add limit” option near the bottom of the following screen.
+- *Apply time limits*: Go to **Settings -> Screen Time -> App Limits**. Tap 'Add Limit', and either choose a category of apps to limit, search for a specific app to limit, or tap 'Websites' to restrict time on specific sites.
+- *Schedule 'downtime' where only specified apps are available*: Go to **Settings -> Screen Time -> Downtime** to set schedule, and **Settings -> Screen Time -> Always Allowed** to select apps to be available during downtime
 
 
 ## Remove features
@@ -74,9 +64,9 @@ On Chrome, try [News Feed Eradicator](https://chrome.google.com/webstore/detail/
 knitr::include_graphics("figures/fb_newsfeed.png")
 ```
 
-On Safari, try [Newsfeed Blocker for Facebook](https://safari-extensions.apple.com/details/?id=com.nolandey.bundleid-A5P7J5U845).
+On Safari, try ["No Distractions" for Facebook](https://apps.apple.com/gb/app/no-distractions-for-facebook/id1464306838?mt=12) which will remove the newsfeed along with other distracting elements, and turn the background white.
 
-On iPhone, you can use [Feedless](https://apps.apple.com/us/app/feedless-newsfeed-blocker/id1339509325) to remove Facebook's newsfeed in Safari (this extension can also block the feed in Instagram and Twitter).
+On iPhone, you can use [Feedless](https://apps.apple.com/us/app/feedless-newsfeed-blocker/id1339509325) to remove the newsfeed when using the Safari browser to visit Facebook (this extension can also block the feed in Instagram and Twitter).
 
 <!-- ```{r, out.width="80%", fig.align='center'} -->
 <!-- knitr::include_graphics("figures/feedless.png") -->
@@ -84,31 +74,28 @@ On iPhone, you can use [Feedless](https://apps.apple.com/us/app/feedless-newsfee
 
 <br>
 
-#### Removing numerical metrics
-You can also use extensions to remove **numerical metrics** on Facebook:
+#### Removing numerical metrics (Chrome)
+In Chrome, you can use [**Facebook Demetricator**](https://chrome.google.com/webstore/detail/facebook-demetricator/dbkgglbefgkimiadfjmgnkjmaoahephg) to remove numbers of likes etc.:
 
 ```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/fb-demetricator.jpg")
 ```
 
-Find installation instructions for the **Facebook Demetricator** [here](https://bengrosser.com/projects/facebook-demetricator/install/).
-
-
 ### YouTube
-On **Chrome**, remove recommended videos from YouTube with the extension [Remove YouTube Recommended Videos](https://chrome.google.com/webstore/detail/remove-youtube-recommende/khncfooichmfjbepaaaebmommgaepoid):
+On **Chrome**, remove video recommentations with the extension [Remove YouTube Recommended Videos](https://chrome.google.com/webstore/detail/remove-youtube-recommende/khncfooichmfjbepaaaebmommgaepoid):
 
 ```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/chrome_youtube.jpg")
 ```
 
 
-On **Safari**, use the [Distraction Blocker for YouTube](https://safari-extensions.apple.com/details/?id=com.robertjeffs.distractionblockerforyoutube-W9AT75TA27)):
+On **Safari**, use ["No Distractions" for YouTube](https://apps.apple.com/gb/app/no-distractions-for-youtube/id1482507016?mt=12):
 
 ```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/youtube_minimal.png")
 ```
 
-On **Firefox**, use [Remove Youtube's Suggestions](https://addons.mozilla.org/en-US/firefox/addon/remove-youtube-s-suggestions/):
+On **Firefox**, try [Remove Youtube's Suggestions](https://addons.mozilla.org/en-US/firefox/addon/remove-youtube-s-suggestions/):
 
 ```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/firefox_youtube.png")
@@ -143,11 +130,12 @@ On **Firefox**, the extension [Remove HTML Elements](https://addons.mozilla.org/
 When you try to focus on writing, consider getting all distractions out of the way.
 
 ### Laptop
+#### Google Docs
 If you use **Google Docs** there are browser extensions to make the interface super minimalistic.
 
 On **Chrome**, try [Distraction Free Mode for Google Docs](https://chrome.google.com/webstore/detail/distraction-free-mode-for/blmejkgbnceohgjfnoiegdlbfkmpkeha).
 
-This extension is also available for [**Firefox**](https://addons.mozilla.org/en-US/firefox/addon/distraction-free-google-docs/) and [**Safari**](https://safari-extensions.apple.com/details/?id=com.kallepersson.distractionfree-BBWY83BGU8):
+This extension is also available for [**Firefox**](https://addons.mozilla.org/en-US/firefox/addon/distraction-free-google-docs/):
 
 ```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/google_docs.png")
@@ -155,7 +143,7 @@ knitr::include_graphics("figures/google_docs.png")
 
 <br>
 
-
+#### Microsoft Word
 **Microsoft Word** also includes a minimalistic 'Focus' mode:
 
 ```{r, out.width="50%"}
@@ -164,33 +152,46 @@ knitr::include_graphics("figures/word_focus2.png")
 ```
 
 
+#### Markdown editors
+Some people like to write in a very minimalistic plain-text format called
+
+There are many minimalistic editors for this.
+One of the best currently on offer is [Typora](https://www.typora.io):
+```{r, out.width='80%'}
+knitr::include_graphics("figures/typora.png")
+```
+
+
+
 ### Smartphone
 On **Android**, try [JotterPad](https://play.google.com/store/apps/details?id=com.jotterpad.x&hl=en&gl=us):
 
-```{r, out.width="80%", fig.align='center'}
+```{r, out.width="80%"}
 knitr::include_graphics("figures/jotterpad.png")
 ```
 
 
-## Go monotasking / dumbphone
-A few tools can force your devices into 'monotasking' mode. 
+## Go monotasking
+A few tricks can be used to reduce the functionality of your device to just those apps you need.
 
 ### Laptop
-[Cold Turkey Writer](https://getcoldturkey.com/writer/) allows you to turn your laptop into a typewriter until you've typed a specific number of words, or for a specific length of time:
+One of the currently best tools is [Micromanager](https://getcoldturkey.com/micromanager/) which allows you lock yourself into just those applications you need, for a specified amount of time:
 
-```{r, out.width="80%", fig.align='center'}
+```{r}
+knitr::include_graphics("figures/micromanager.png")
+```
+
+
+
+#### Writing-only
+[Cold Turkey Writer](https://getcoldturkey.com/writer/) turns your laptop into a typewriter until you've typed a specific number of words, or for a specific length of time:
+
+```{r}
 knitr::include_graphics("figures/cold_turkey.png")
 ```
 
+
 ### Smartphone
-On Android, simulate a similar situation with the app [Dumbphone](https://play.google.com/store/apps/details?id=bg.bozho.dumbphone&hl=en&gl=us):
-
-```{r, out.width="60%", fig.align='center'}
-knitr::include_graphics("figures/dumbphone.png")
-```
-
-<br> 
-
 On iOS, get the same effect using [Screen Time](https://support.apple.com/en-gb/HT208982)'s 'Downtime' feature.
 When 'Downtime' is scheduled, only phone calls and apps that you choose to allow are available:
 
