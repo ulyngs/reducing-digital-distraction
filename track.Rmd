@@ -18,9 +18,8 @@ library(knitr)
 
 # Track yourself {.tabset}
 ## See how your spend your time
-Various tools are available to see how your spend time on your devices, and compare it to your goals.
-
-On **laptop**, one of the most popular is [RescueTime](https://www.rescuetime.com): 
+### Laptop
+One of the most popular tools for tracking your time on laptop is [RescueTime](https://www.rescuetime.com): 
 
 ```{r, out.width="80%", fig.align='center'}
 knitr::include_graphics("figures/rescue_time.png")
@@ -29,7 +28,13 @@ knitr::include_graphics("figures/rescue_time.png")
 <br>
 
 ### Android
-On **Android**, apps such as [Usage Time](https://play.google.com/store/apps/details?id=com.agooday.screentime&hl=en&gl=us) provide the same functionality:
+Google provides this functionality with [Digital Wellbeing](https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&hl=en_GB), which is pre-installed on many newer Android devices (Settings > Digital Wellbeing):
+
+```{r, out.width="90%", fig.align='center'}
+knitr::include_graphics("figures/digi_wellbeing.jpeg")
+```
+
+Many third-party apps do the same thing, e.g. [Usage Time](https://play.google.com/store/apps/details?id=com.agooday.screentime&hl=en&gl=us):
 
 ```{r, out.width="50%", fig.align='center'}
 knitr::include_graphics("figures/app_usage.png")
@@ -37,14 +42,9 @@ knitr::include_graphics("figures/app_usage.png")
 
 <br>
 
-Google provides the same functionality with [Digital Wellbeing](https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&hl=en_GB), which is pre-installed on many newer Android devices (Settings > Digital Wellbeing):
-
-```{r, out.width="90%", fig.align='center'}
-knitr::include_graphics("figures/digi_wellbeing.jpeg")
-```
 
 ### iOS
-On iOS, [Screen Time](https://support.apple.com/en-gb/HT208982) provides this ability (**Settings -> Screen Time**):
+Apple's [Screen Time](https://support.apple.com/en-gb/HT208982) functionality provides this ability on iOS (**Settings -> Screen Time**):
 
 ```{r, out.width="50%", fig.align='center'}
 knitr::include_graphics("figures/screentime.png")
@@ -53,7 +53,7 @@ knitr::include_graphics("figures/screentime.png")
 
 
 ## Work in bursts with a timer
-To keep you on track, many people track themselves with a countdown timer.
+To keep themselves on track, many people use a countdown timer.
 This is often done with the 'Pomodoro' technique, where you break your work down in intervals, typically 25 minutes, separated by short breaks.
 
 ### Laptop
@@ -82,7 +82,7 @@ knitr::include_graphics("figures/firefox_pomodoro.png")
 <br> 
 
 ### Android
-Apps pomorodo apps include [Its Study Time](https://play.google.com/store/apps/details?id=com.deGans.itsStudyTime&hl=en&gl=us):
+Try e.g. [Its Study Time](https://play.google.com/store/apps/details?id=com.deGans.itsStudyTime&hl=en&gl=us):
 
 ```{r, out.width="40%", fig.align='center'}
 knitr::include_graphics("figures/its_study_time2.png")
@@ -91,7 +91,7 @@ knitr::include_graphics("figures/its_study_time2.png")
 <br>
 
 ### iOS
-On Apple's devices, pomodoro apps include [Mattie](https://itunes.apple.com/gb/app/sidekick-mattie/id1166327958?mt=8&ign-mpt=uo%3D4):
+Try e.g. [Mattie](https://itunes.apple.com/gb/app/sidekick-mattie/id1166327958?mt=8&ign-mpt=uo%3D4):
 
 ```{r, out.width="40%", fig.align='center'}
 knitr::include_graphics("figures/mattie.jpg")

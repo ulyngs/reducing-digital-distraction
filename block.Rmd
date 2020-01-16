@@ -126,6 +126,37 @@ knitr::include_graphics("figures/remove_element.jpg")
 On **Firefox**, the extension [Remove HTML Elements](https://addons.mozilla.org/en-US/firefox/addon/remove-html-elements/?src=search) does the same thing.
 
 
+## Go monotasking
+A few tricks can be used to reduce the functionality of your device to just those apps you need.
+
+### Laptop
+One of the currently best tools is [Micromanager](https://getcoldturkey.com/micromanager/) which allows you lock yourself into just those applications you need, for a specified amount of time:
+
+```{r}
+knitr::include_graphics("figures/micromanager.png")
+```
+
+
+
+#### Writing-only
+[Cold Turkey Writer](https://getcoldturkey.com/writer/) turns your laptop into a typewriter until you've typed a specific number of words, or for a specific length of time:
+
+```{r}
+knitr::include_graphics("figures/cold_turkey.png")
+```
+
+
+### Smartphone
+On iOS, get the same effect using [Screen Time](https://support.apple.com/en-gb/HT208982)'s 'Downtime' feature.
+When 'Downtime' is scheduled, only phone calls and apps that you choose to allow are available:
+
+```{r, out.width="40%"}
+knitr::include_graphics("figures/downtime1.png")
+knitr::include_graphics("figures/downtime2.png")
+```
+
+
+
 ## Minimal writing tools
 When you try to focus on writing, consider getting all distractions out of the way.
 
@@ -171,31 +202,3 @@ knitr::include_graphics("figures/jotterpad.png")
 ```
 
 
-## Go monotasking
-A few tricks can be used to reduce the functionality of your device to just those apps you need.
-
-### Laptop
-One of the currently best tools is [Micromanager](https://getcoldturkey.com/micromanager/) which allows you lock yourself into just those applications you need, for a specified amount of time:
-
-```{r}
-knitr::include_graphics("figures/micromanager.png")
-```
-
-
-
-#### Writing-only
-[Cold Turkey Writer](https://getcoldturkey.com/writer/) turns your laptop into a typewriter until you've typed a specific number of words, or for a specific length of time:
-
-```{r}
-knitr::include_graphics("figures/cold_turkey.png")
-```
-
-
-### Smartphone
-On iOS, get the same effect using [Screen Time](https://support.apple.com/en-gb/HT208982)'s 'Downtime' feature.
-When 'Downtime' is scheduled, only phone calls and apps that you choose to allow are available:
-
-```{r, out.width="40%"}
-knitr::include_graphics("figures/downtime1.png")
-knitr::include_graphics("figures/downtime2.png")
-```

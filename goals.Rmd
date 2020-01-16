@@ -16,8 +16,8 @@ library(knitr)
 ```
 
 # Advance your goals {.tabset}
-## Make new tabs remind you of your goals
-On **laptop**, use new tabs to remind you of what you need to do.
+## Goal reminders on new tabs
+On **laptop**, you can replace the content of new tabs and use this to remind you of your goals.
 
 For example, the **Chrome** extension [Focus](https://chrome.google.com/webstore/detail/focus/paipcheolflniajdfeglfpddafcklepg?hl=gb) turns new tabs into a todo-list:
 
@@ -78,7 +78,7 @@ Search through the browser extension stores for similar extensions for your brow
 - [Chrome Extensions](https://chrome.google.com/webstore/category/extensions?hl=en)
 - [Firefox Add-Ons](https://addons.mozilla.org/en-GB/firefox/)
 
-## Automatically redirect yourself away from distraction
+## Automatically redirect yourself
 On **laptop**, automatically redirect yourself away from distracting websites when you need to focus.
 
 For example, use the **Chrome** extension [Timewarp](https://chrome.google.com/webstore/detail/timewarp/mmmhadpnjmokjbmgamifipkjddhlfkhi?hl=gb):

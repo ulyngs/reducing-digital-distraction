@@ -17,6 +17,26 @@ library(knitr)
 
 
 # Change your digital environment {.tabset}
+
+## Use full-screen (laptop)
+On a laptop, limit the amount of information available to just what you need for a task.
+
+On **Mac**, one way to do this is by using full screen mode to e.g. put two tools you need side by side:
+
+```{r, out.width="80%", fig.align='center', fig.cap="Rather than this..."}
+knitr::include_graphics("figures/full_screen1.png")
+```
+
+```{r, out.width="80%", fig.align='center', fig.cap="... try this"}
+knitr::include_graphics("figures/full_screen_2.png")
+```
+
+Here's a YouTube tutorial showing how to do this:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uRtWGeh5rJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
 ## Go grey-scale (smartphone)
 A simple way to make your smartphone less distracting is to turn it greyscale when you do not need color.
 
@@ -63,21 +83,4 @@ On a **Mac**, newer operating systems also include a Do Not Disturb mode, for wh
 ```{r, out.width="40%", fig.align='center'}
 knitr::include_graphics("figures/do_not_disturb_mac.png")
 ```
-
-## Use full-screen (laptop)
-On a laptop, limit the amount of information available to just what you need for a task.
-
-On **Mac**, one way to do this is by using full screen mode to e.g. put two tools you need side by side:
-
-```{r, out.width="80%", fig.align='center', fig.cap="Rather than this..."}
-knitr::include_graphics("figures/full_screen1.png")
-```
-
-```{r, out.width="80%", fig.align='center', fig.cap="... try this"}
-knitr::include_graphics("figures/full_screen_2.png")
-```
-
-Here's a YouTube tutorial showing how to do this:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uRtWGeh5rJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
