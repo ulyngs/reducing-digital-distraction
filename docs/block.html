@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -84,7 +84,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -233,6 +232,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -244,18 +244,6 @@ $(document).ready(function () {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -323,11 +311,10 @@ $(document).ready(function () {
 <p>If particular websites or apps distract you, try blocking your access to them for some time or after a certain amount of time has passed.</p>
 <div id="laptop" class="section level3">
 <h3>Laptop</h3>
-<p>The most popular website blocker for <strong>Chrome</strong> is <a href="https://chrome.google.com/webstore/detail/block-site-website-blocke/eiimnmioipafcokbfikbljfdeojpcgbh/related?hl=en">Block Site - Website Blocker for Chrome™</a>: <img src="figures/chrome_block_setup.png" width="45%" /><img src="figures/chrome_block_result.png" width="45%" /></p>
-<p>On <strong>Safari</strong>, try <a href="https://safari-extensions.apple.com/details/?id=com.obiedcorner.Roadblock-WE58FS6Q6B">Roadblock</a>:</p>
-<p><img src="figures/roadblock.png" width="50%" style="display: block; margin: auto;" /></p>
-<p>On <strong>Firefox</strong>, try <a href="https://addons.mozilla.org/en-US/firefox/addon/impulse-blocker/?src=search">Impulse Blocker</a>:</p>
-<p><img src="figures/impulse_control.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>One of the best solutions, which works with all browsers, is <a href="https://getcoldturkey.com/">Cold Turkey Blocker</a>.</p>
+<p>The free version can block websites; the paid version can also block applications and set up schedules.</p>
+<p><img src="figures/cold_turkey_blocker.png" width="80%" style="display: block; margin: auto auto auto 0;" /></p>
+<p>Many, many browser extensions for specific browsers can do the same thing, e.g., <a href="https://chrome.google.com/webstore/detail/block-site-website-blocke/eiimnmioipafcokbfikbljfdeojpcgbh/related?hl=en">‘Block Site’ for Chrome</a>, <a href="https://safari-extensions.apple.com/details/?id=com.obiedcorner.Roadblock-WE58FS6Q6B">‘Roadblock’ for Safari</a>, or <a href="https://addons.mozilla.org/en-US/firefox/addon/impulse-blocker/?src=search">‘Impulse Blocker’ for Firefox</a>.</p>
 <p>You can find many others by searching through the extensions store for the web browser you use:</p>
 <ul>
 <li><a href="https://safari-extensions.apple.com">Safari Extensions</a></li>
@@ -338,12 +325,11 @@ $(document).ready(function () {
 <div id="smartphone" class="section level3">
 <h3>Smartphone</h3>
 <p>On <strong>Android</strong>, one of the most popular app blockers is <a href="https://play.google.com/store/apps/details?id=com.stayfocused&amp;hl=en_GB">Stay Focused</a>:</p>
-<p><img src="figures/stay_focused_block.png" width="45%" /><img src="figures/stay_focused_limit.png" width="45%" /></p>
+<p><img src="figures/stay_focused_block.png" width="45%" style="display: block; margin: auto auto auto 0;" /><img src="figures/stay_focused_limit.png" width="45%" style="display: block; margin: auto auto auto 0;" /></p>
 <p>On <strong>iOS</strong>, use Apple’s built-in app <a href="https://support.apple.com/en-gb/HT208982">Screen Time</a> to block your own access to particular apps.</p>
-<p>You can do so in two ways:</p>
 <ul>
-<li><em>Restrict category of apps</em>: Go to <strong>Settings -&gt; Screen Time -&gt; App Limits</strong>. iOS will ask you to pick an entire category of apps to apply a time restriction to.</li>
-<li><em>Restrict specific app</em>: Go to <strong>Settings -&gt; Screen Time</strong>. Find the app in the list of “Most Used” and tap it. You’ll see an “add limit” option near the bottom of the following screen.</li>
+<li><em>Apply time limits</em>: Go to <strong>Settings -&gt; Screen Time -&gt; App Limits</strong>. Tap ‘Add Limit’, and either choose a category of apps to limit, search for a specific app to limit, or tap ‘Websites’ to restrict time on specific sites.</li>
+<li><em>Schedule ‘downtime’ where only specified apps are available</em>: Go to <strong>Settings -&gt; Screen Time -&gt; Downtime</strong> to set schedule, and <strong>Settings -&gt; Screen Time -&gt; Always Allowed</strong> to select apps to be available during downtime</li>
 </ul>
 </div>
 </div>
@@ -356,27 +342,26 @@ $(document).ready(function () {
 <h4>Removing the newsfeed</h4>
 <p>On Chrome, try <a href="https://chrome.google.com/webstore/detail/news-feed-eradicator-for/fjcldmjmjhkklehbacihaiopjklihlgg">News Feed Eradicator</a>.</p>
 <p><img src="figures/fb_newsfeed.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>On Safari, try <a href="https://safari-extensions.apple.com/details/?id=com.nolandey.bundleid-A5P7J5U845">Newsfeed Blocker for Facebook</a>.</p>
-<p>On iPhone, you can use <a href="https://apps.apple.com/us/app/feedless-newsfeed-blocker/id1339509325">Feedless</a> to remove Facebook’s newsfeed in Safari (this extension can also block the feed in Instagram and Twitter).</p>
+<p>On Safari, try <a href="https://apps.apple.com/gb/app/no-distractions-for-facebook/id1464306838?mt=12">“No Distractions” for Facebook</a> which will remove the newsfeed along with other distracting elements, and turn the background white.</p>
+<p>On iPhone, you can use <a href="https://apps.apple.com/us/app/feedless-newsfeed-blocker/id1339509325">Feedless</a> to remove the newsfeed when using the Safari browser to visit Facebook (this extension can also block the feed in Instagram and Twitter).</p>
 <!-- ```{r, out.width="80%", fig.align='center'} -->
 <!-- knitr::include_graphics("figures/feedless.png") -->
 <!-- ``` -->
 <p><br></p>
 </div>
-<div id="removing-numerical-metrics" class="section level4">
-<h4>Removing numerical metrics</h4>
-<p>You can also use extensions to remove <strong>numerical metrics</strong> on Facebook:</p>
+<div id="removing-numerical-metrics-chrome" class="section level4">
+<h4>Removing numerical metrics (Chrome)</h4>
+<p>In Chrome, you can use <a href="https://chrome.google.com/webstore/detail/facebook-demetricator/dbkgglbefgkimiadfjmgnkjmaoahephg"><strong>Facebook Demetricator</strong></a> to remove numbers of likes etc.:</p>
 <p><img src="figures/fb-demetricator.jpg" width="80%" style="display: block; margin: auto;" /></p>
-<p>Find installation instructions for the <strong>Facebook Demetricator</strong> <a href="https://bengrosser.com/projects/facebook-demetricator/install/">here</a>.</p>
 </div>
 </div>
 <div id="youtube" class="section level3">
 <h3>YouTube</h3>
-<p>On <strong>Chrome</strong>, remove recommended videos from YouTube with the extension <a href="https://chrome.google.com/webstore/detail/remove-youtube-recommende/khncfooichmfjbepaaaebmommgaepoid">Remove YouTube Recommended Videos</a>:</p>
+<p>On <strong>Chrome</strong>, remove video recommentations with the extension <a href="https://chrome.google.com/webstore/detail/remove-youtube-recommende/khncfooichmfjbepaaaebmommgaepoid">Remove YouTube Recommended Videos</a>:</p>
 <p><img src="figures/chrome_youtube.jpg" width="80%" style="display: block; margin: auto;" /></p>
-<p>On <strong>Safari</strong>, use the <a href="https://safari-extensions.apple.com/details/?id=com.robertjeffs.distractionblockerforyoutube-W9AT75TA27">Distraction Blocker for YouTube</a>):</p>
+<p>On <strong>Safari</strong>, use <a href="https://apps.apple.com/gb/app/no-distractions-for-youtube/id1482507016?mt=12">“No Distractions” for YouTube</a>:</p>
 <p><img src="figures/youtube_minimal.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>On <strong>Firefox</strong>, use <a href="https://addons.mozilla.org/en-US/firefox/addon/remove-youtube-s-suggestions/">Remove Youtube’s Suggestions</a>:</p>
+<p>On <strong>Firefox</strong>, try <a href="https://addons.mozilla.org/en-US/firefox/addon/remove-youtube-s-suggestions/">Remove Youtube’s Suggestions</a>:</p>
 <p><img src="figures/firefox_youtube.png" width="80%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="gmail" class="section level3">
@@ -389,44 +374,57 @@ $(document).ready(function () {
 <div id="anything" class="section level3">
 <h3>Anything</h3>
 <p>On <strong>Chrome</strong>, the extension <a href="https://chrome.google.com/webstore/detail/click-to-remove-element/jcgpghgjhhahcefnfpbncdmhhddedhnk?hl=gb">Click to Remove Element</a> allows you to remove elements from any website with a single click:</p>
-<p><img src="figures/remove_element.jpg" width="80%" /></p>
+<p><img src="figures/remove_element.jpg" width="80%" style="display: block; margin: auto auto auto 0;" /></p>
 <p>On <strong>Firefox</strong>, the extension <a href="https://addons.mozilla.org/en-US/firefox/addon/remove-html-elements/?src=search">Remove HTML Elements</a> does the same thing.</p>
+</div>
+</div>
+<div id="go-monotasking" class="section level2">
+<h2>Go monotasking</h2>
+<p>A few tricks can be used to reduce the functionality of your device to just those apps you need.</p>
+<div id="laptop-1" class="section level3">
+<h3>Laptop</h3>
+<p>One of the currently best tools is <a href="https://getcoldturkey.com/micromanager/">Micromanager</a> which allows you lock yourself into just those applications you need, for a specified amount of time:</p>
+<p><img src="figures/micromanager.png" width="80%" style="display: block; margin: auto auto auto 0;" /></p>
+<div id="writing-only" class="section level4">
+<h4>Writing-only</h4>
+<p><a href="https://getcoldturkey.com/writer/">Cold Turkey Writer</a> turns your laptop into a typewriter until you’ve typed a specific number of words, or for a specific length of time:</p>
+<p><img src="figures/cold_turkey.png" width="80%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+</div>
+<div id="smartphone-1" class="section level3">
+<h3>Smartphone</h3>
+<p>On iOS, get the same effect using <a href="https://support.apple.com/en-gb/HT208982">Screen Time</a>‘s ’Downtime’ feature. When ‘Downtime’ is scheduled, only phone calls and apps that you choose to allow are available:</p>
+<p><img src="figures/downtime1.png" width="40%" style="display: block; margin: auto auto auto 0;" /><img src="figures/downtime2.png" width="40%" style="display: block; margin: auto auto auto 0;" /></p>
 </div>
 </div>
 <div id="minimal-writing-tools" class="section level2">
 <h2>Minimal writing tools</h2>
 <p>When you try to focus on writing, consider getting all distractions out of the way.</p>
-<div id="laptop-1" class="section level3">
-<h3>Laptop</h3>
-<p>If you use <strong>Google Docs</strong> there are browser extensions to make the interface super minimalistic.</p>
-<p>On <strong>Chrome</strong>, try <a href="https://chrome.google.com/webstore/detail/distraction-free-mode-for/blmejkgbnceohgjfnoiegdlbfkmpkeha">Distraction Free Mode for Google Docs</a>.</p>
-<p>This extension is also available for <a href="https://addons.mozilla.org/en-US/firefox/addon/distraction-free-google-docs/"><strong>Firefox</strong></a> and <a href="https://safari-extensions.apple.com/details/?id=com.kallepersson.distractionfree-BBWY83BGU8"><strong>Safari</strong></a>:</p>
-<p><img src="figures/google_docs.png" width="80%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-<p><strong>Microsoft Word</strong> also includes a minimalistic ‘Focus’ mode:</p>
-<p><img src="figures/word_focus1.png" width="50%" /><img src="figures/word_focus2.png" width="50%" /></p>
-</div>
-<div id="smartphone-1" class="section level3">
-<h3>Smartphone</h3>
-<p>On <strong>Android</strong>, try <a href="https://play.google.com/store/apps/details?id=com.jotterpad.x&amp;hl=en&amp;gl=us">JotterPad</a>:</p>
-<p><img src="figures/jotterpad.png" width="80%" style="display: block; margin: auto;" /></p>
-</div>
-</div>
-<div id="go-monotasking-dumbphone" class="section level2">
-<h2>Go monotasking / dumbphone</h2>
-<p>A few tools can force your devices into ‘monotasking’ mode.</p>
 <div id="laptop-2" class="section level3">
 <h3>Laptop</h3>
-<p><a href="https://getcoldturkey.com/writer/">Cold Turkey Writer</a> allows you to turn your laptop into a typewriter until you’ve typed a specific number of words, or for a specific length of time:</p>
-<p><img src="figures/cold_turkey.png" width="80%" style="display: block; margin: auto;" /></p>
+<div id="google-docs" class="section level4">
+<h4>Google Docs</h4>
+<p>If you use <strong>Google Docs</strong> there are browser extensions to make the interface super minimalistic.</p>
+<p>On <strong>Chrome</strong>, try <a href="https://chrome.google.com/webstore/detail/distraction-free-mode-for/blmejkgbnceohgjfnoiegdlbfkmpkeha">Distraction Free Mode for Google Docs</a>.</p>
+<p>This extension is also available for <a href="https://addons.mozilla.org/en-US/firefox/addon/distraction-free-google-docs/"><strong>Firefox</strong></a>:</p>
+<p><img src="figures/google_docs.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+</div>
+<div id="microsoft-word" class="section level4">
+<h4>Microsoft Word</h4>
+<p><strong>Microsoft Word</strong> also includes a minimalistic ‘Focus’ mode:</p>
+<p><img src="figures/word_focus1.png" width="50%" style="display: block; margin: auto auto auto 0;" /><img src="figures/word_focus2.png" width="50%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<div id="markdown-editors" class="section level4">
+<h4>Markdown editors</h4>
+<p>Some people like to write in a very minimalistic plain-text format called</p>
+<p>There are many minimalistic editors for this. One of the best currently on offer is <a href="https://www.typora.io">Typora</a>: <img src="figures/typora.png" width="80%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
 </div>
 <div id="smartphone-2" class="section level3">
 <h3>Smartphone</h3>
-<p>On Android, simulate a similar situation with the app <a href="https://play.google.com/store/apps/details?id=bg.bozho.dumbphone&amp;hl=en&amp;gl=us">Dumbphone</a>:</p>
-<p><img src="figures/dumbphone.png" width="60%" style="display: block; margin: auto;" /></p>
-<p><br></p>
-<p>On iOS, get the same effect using <a href="https://support.apple.com/en-gb/HT208982">Screen Time</a>‘s ’Downtime’ feature. When ‘Downtime’ is scheduled, only phone calls and apps that you choose to allow are available:</p>
-<p><img src="figures/downtime1.png" width="40%" /><img src="figures/downtime2.png" width="40%" /></p>
+<p>On <strong>Android</strong>, try <a href="https://play.google.com/store/apps/details?id=com.jotterpad.x&amp;hl=en&amp;gl=us">JotterPad</a>:</p>
+<p><img src="figures/jotterpad.png" width="80%" style="display: block; margin: auto auto auto 0;" /></p>
 </div>
 </div>
 </div>
@@ -448,6 +446,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

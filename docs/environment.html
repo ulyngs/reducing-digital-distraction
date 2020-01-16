@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -84,7 +84,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -233,6 +232,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -244,18 +244,6 @@ $(document).ready(function () {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -318,6 +306,26 @@ $(document).ready(function () {
 
 <div id="change-your-digital-environment" class="section level1 tabset">
 <h1>Change your digital environment</h1>
+<div id="use-full-screen-laptop" class="section level2">
+<h2>Use full-screen (laptop)</h2>
+<p>On a laptop, limit the amount of information available to just what you need for a task.</p>
+<p>On <strong>Mac</strong>, one way to do this is by using full screen mode to e.g. put two tools you need side by side:</p>
+<div class="figure" style="text-align: center">
+<img src="figures/full_screen1.png" alt="Rather than this..." width="80%" />
+<p class="caption">
+Rather than this…
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="figures/full_screen_2.png" alt="... try this" width="80%" />
+<p class="caption">
+… try this
+</p>
+</div>
+<p>Here’s a YouTube tutorial showing how to do this:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uRtWGeh5rJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
 <div id="go-grey-scale-smartphone" class="section level2">
 <h2>Go grey-scale (smartphone)</h2>
 <p>A simple way to make your smartphone less distracting is to turn it greyscale when you do not need color.</p>
@@ -349,26 +357,6 @@ $(document).ready(function () {
 <p>On a <strong>Mac</strong>, newer operating systems also include a Do Not Disturb mode, for when you need to focus without having popups about incoming email etc.:</p>
 <p><img src="figures/do_not_disturb_mac.png" width="40%" style="display: block; margin: auto;" /></p>
 </div>
-<div id="use-full-screen-laptop" class="section level2">
-<h2>Use full-screen (laptop)</h2>
-<p>On a laptop, limit the amount of information available to just what you need for a task.</p>
-<p>On <strong>Mac</strong>, one way to do this is by using full screen mode to e.g. put two tools you need side by side:</p>
-<div class="figure" style="text-align: center">
-<img src="figures/full_screen1.png" alt="Rather than this..." width="80%" />
-<p class="caption">
-Rather than this…
-</p>
-</div>
-<div class="figure" style="text-align: center">
-<img src="figures/full_screen_2.png" alt="... try this" width="80%" />
-<p class="caption">
-… try this
-</p>
-</div>
-<p>Here’s a YouTube tutorial showing how to do this:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uRtWGeh5rJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-</div>
 </div>
 
 
@@ -388,6 +376,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

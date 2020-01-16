@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -84,7 +84,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -233,6 +232,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -244,18 +244,6 @@ $(document).ready(function () {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -320,28 +308,30 @@ $(document).ready(function () {
 <h1>Track yourself</h1>
 <div id="see-how-your-spend-your-time" class="section level2">
 <h2>See how your spend your time</h2>
-<p>Various tools are available to see how your spend time on your devices, and compare it to your goals.</p>
-<p>On <strong>laptop</strong>, one of the most popular is <a href="https://www.rescuetime.com">RescueTime</a>:</p>
+<div id="laptop" class="section level3">
+<h3>Laptop</h3>
+<p>One of the most popular tools for tracking your time on laptop is <a href="https://www.rescuetime.com">RescueTime</a>:</p>
 <p><img src="figures/rescue_time.png" width="80%" style="display: block; margin: auto;" /></p>
 <p><br></p>
+</div>
 <div id="android" class="section level3">
 <h3>Android</h3>
-<p>On <strong>Android</strong>, apps such as <a href="https://play.google.com/store/apps/details?id=com.agooday.screentime&amp;hl=en&amp;gl=us">Usage Time</a> provide the same functionality:</p>
+<p>Google provides this functionality with <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&amp;hl=en_GB">Digital Wellbeing</a>, which is pre-installed on many newer Android devices (Settings &gt; Digital Wellbeing):</p>
+<p><img src="figures/digi_wellbeing.jpeg" width="90%" style="display: block; margin: auto;" /></p>
+<p>Many third-party apps do the same thing, e.g. <a href="https://play.google.com/store/apps/details?id=com.agooday.screentime&amp;hl=en&amp;gl=us">Usage Time</a>:</p>
 <p><img src="figures/app_usage.png" width="50%" style="display: block; margin: auto;" /></p>
 <p><br></p>
-<p>Google provides the same functionality with <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&amp;hl=en_GB">Digital Wellbeing</a>, which is pre-installed on many newer Android devices (Settings &gt; Digital Wellbeing):</p>
-<p><img src="figures/digi_wellbeing.jpeg" width="90%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="ios" class="section level3">
 <h3>iOS</h3>
-<p>On iOS, <a href="https://support.apple.com/en-gb/HT208982">Screen Time</a> provides this ability (<strong>Settings -&gt; Screen Time</strong>):</p>
+<p>Apple’s <a href="https://support.apple.com/en-gb/HT208982">Screen Time</a> functionality provides this ability on iOS (<strong>Settings -&gt; Screen Time</strong>):</p>
 <p><img src="figures/screentime.png" width="50%" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <div id="work-in-bursts-with-a-timer" class="section level2">
 <h2>Work in bursts with a timer</h2>
-<p>To keep you on track, many people track themselves with a countdown timer. This is often done with the ‘Pomodoro’ technique, where you break your work down in intervals, typically 25 minutes, separated by short breaks.</p>
-<div id="laptop" class="section level3">
+<p>To keep themselves on track, many people use a countdown timer. This is often done with the ‘Pomodoro’ technique, where you break your work down in intervals, typically 25 minutes, separated by short breaks.</p>
+<div id="laptop-1" class="section level3">
 <h3>Laptop</h3>
 <p>Numerous tools support this, for example <a href="https://apps.apple.com/us/app/be-focused-focus-timer/id973134470?mt=12">Be Focused</a>:</p>
 <p><img src="figures/pomodoro.png" width="30%" style="display: block; margin: auto;" /></p>
@@ -354,13 +344,13 @@ $(document).ready(function () {
 </div>
 <div id="android-1" class="section level3">
 <h3>Android</h3>
-<p>Apps pomorodo apps include <a href="https://play.google.com/store/apps/details?id=com.deGans.itsStudyTime&amp;hl=en&amp;gl=us">Its Study Time</a>:</p>
+<p>Try e.g. <a href="https://play.google.com/store/apps/details?id=com.deGans.itsStudyTime&amp;hl=en&amp;gl=us">Its Study Time</a>:</p>
 <p><img src="figures/its_study_time2.png" width="40%" style="display: block; margin: auto;" /></p>
 <p><br></p>
 </div>
 <div id="ios-1" class="section level3">
 <h3>iOS</h3>
-<p>On Apple’s devices, pomodoro apps include <a href="https://itunes.apple.com/gb/app/sidekick-mattie/id1166327958?mt=8&amp;ign-mpt=uo%3D4">Mattie</a>:</p>
+<p>Try e.g. <a href="https://itunes.apple.com/gb/app/sidekick-mattie/id1166327958?mt=8&amp;ign-mpt=uo%3D4">Mattie</a>:</p>
 <p><img src="figures/mattie.jpg" width="40%" style="display: block; margin: auto;" /></p>
 </div>
 </div>
@@ -383,6 +373,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
